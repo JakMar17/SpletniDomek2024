@@ -17,7 +17,7 @@
       <a href="https://www.linkedin.com/in/jakmar17" target="_blank" class="button__rounded is-dark">
         <i class="ri-linkedin-fill"></i>
       </a>
-      <a href="mailto://jakob.marusic17@gmail.com" target="_blank" class="button__rounded is-dark">
+      <a href="mailto:jakob.marusic17@gmail.com" target="_blank" class="button__rounded is-dark">
         <i class="ri-mail-open-line"></i>
       </a>
       <a href="https://facebook.com/jakmar17" target="_blank" class="button__rounded is-dark">
