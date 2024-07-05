@@ -1,5 +1,5 @@
 export interface CvCardModel {
-    company: string;
+    entityName: string;
     position: string;
     years: string;
     description: string[];

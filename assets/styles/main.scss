@@ -178,3 +178,9 @@ otherwise they are too wide for html body
 .pre-wrap {
     white-space: pre-wrap;
 }
+
+@media screen and (max-width: 1024px) {
+    .container {
+        margin: 0 2rem;
+    }
+}

@@ -4,10 +4,10 @@
       <h1 class="header-h1">Življenjepis</h1>
     </div>
 
-    <h2 class="header-h2">Delovne izkušnje v IT</h2>
+    <h2 class="header-h2">Delovne izkušnje</h2>
 
-    <div>
-      <CvSplitRowComponent v-for="izkusnja of izkusnje" :key="izkusnja.company" v-bind="izkusnja"/>
+    <div v-if="workExperiences.length !== 0">
+      <CvSplitRowComponent v-for="w of workExperiences" :key="w.company" v-bind="w"/>
     </div>
 
 
@@ -15,10 +15,13 @@
 
     <h2 class="header-h2">Izobrazba</h2>
     <div>
-      <CvSplitRowComponent v-for="i of izobrazba" :key="i.position" v-bind="i"/>
+      <CvSplitRowComponent v-for="e of education" :key="e.position" v-bind="e"/>
     </div>
 
-    <h2 class="header-h2">Mehke veščine</h2>
+    <h2 class="header-h2">Ostali poudarki</h2>
+    <div>
+      <CvSplitRowComponent v-for="o of otherHighlights" :key="o.position" v-bind="o"/>
+    </div>
 
   </div>
 </template>
@@ -28,29 +31,14 @@
 
 import {CvCardModel} from "~/models";
 
-const izkusnje: CvCardModel[] = [
-  {
-    company: 'Medius d.o.o',
-    position: 'Frontend razvijalec',
-    years: '2022 - danes',
-    description: [
-      "Razvoj Angular poslovnih aplikacij po meri za naročnike Loterijo Slovenije, Telekom Slovenije, VSRS in druge. Celostni razvoj z razvojem uporabniškega vmesnika, uporabniške izkušnje in poslovne logike. Koordinacija preostalih frontend razvijalcev in koordinacija sočasnega razvoja zalednih in čelnih delov sistema.",
-      'Razvoj "in-house" prilagojenega ogrodja za hiter razvoj uporabniških vmesnikov.'
-    ]
-  }
-];
+const workExperiences = ref<CvCardModel[]>([]);
+const education = ref<CvCardModel[]>([]);
+const otherHighlights = ref<CvCardModel[]>([]);
 
-const izobrazba: CvCardModel[] = [
-  {
-    company: 'Fakulteta za računalništvo in informatiko',
-    position: 'Univerzitetni diplomirani inženir računalništva in informatike',
-    years: '2017 - 2021',
-    description: [
-      "Razvoj Angular poslovnih aplikacij po meri za naročnike Loterijo Slovenije, Telekom Slovenije, VSRS in druge. Celostni razvoj z razvojem uporabniškega vmesnika, uporabniške izkušnje in poslovne logike. Koordinacija preostalih frontend razvijalcev in koordinacija sočasnega razvoja zalednih in čelnih delov sistema.",
-      'Razvoj "in-house" prilagojenega ogrodja za hiter razvoj uporabniških vmesnikov.'
-    ]
-  }
-];
+useAsyncData('fetchWorkExperiences', () => queryContent('cv/work-experiences').findOne()).then(({data}) => workExperiences.value = data.value.entries);
+useAsyncData('fetchEducation', () => queryContent('cv/education').findOne()).then(({data}) => education.value = data.value.entries);
+useAsyncData('fetchOtherHighlights', () => queryContent('cv/other-highlights').findOne()).then(({data}) => otherHighlights.value = data.value.entries);
+
 
 </script>
 

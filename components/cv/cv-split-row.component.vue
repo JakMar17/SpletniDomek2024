@@ -1,6 +1,6 @@
 <template>
   <div class="cv__row">
-    <h3 class="cv__company-cell is-gray" style="font-family: 'Inter Tight', sans-serif; font-size: 24px; font-weight: 500">{{company}}</h3>
+    <h3 class="cv__company-cell is-gray" style="font-family: 'Inter Tight', sans-serif; font-size: 24px; font-weight: 500">{{entityName}}</h3>
     <div class="cv__description-cell">
       <div style="margin-bottom: 2rem">
         <h4 style="font-family: 'Inter Tight', sans-serif; font-size: 20px; font-weight: 600">{{position}}</h4>
@@ -48,6 +48,7 @@ const props = defineProps<CvCardModel>();
   &__company-cell {
     @media screen and (min-width: 786px) {
       flex-grow: 1;
+      width: 20%;
     }
   }
 

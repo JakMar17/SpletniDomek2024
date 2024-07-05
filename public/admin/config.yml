@@ -10,12 +10,52 @@ public_folder: /img
 collections:
   - name: "cv"
     label: "Življenjepis"
-    fields:
-      - name: 'workExperiences'
-        label: 'Delovne izkušnje'
-        widget: 'list'
+    format: "json"
+    files:
+      - name: "workExperiences"
+        label: "Delovne izkušnje"
+        format: "json"
+        file: "content/cv/work-experiences.json"
+        create: true
+        slug: "{{slug}}"
         fields:
-          - { label: 'Podjetje', name: 'company', widget: 'string', required: true }
-          - { label: 'Pozicija', name: 'position', widget: 'string', required: true }
-          - { label: 'Leta', name: 'years', widget: 'string', required: true }
-          - { label: 'Opis', name: 'description', widget: 'list', field: {label: 'Opis', name: 'description', widget: string} }
+          - label: "Entiteta"
+            name: "entries"
+            widget: "list"
+            fields:
+              - { label: 'Podjetje', name: 'entityName', widget: 'string', required: true }
+              - { label: 'Pozicija', name: 'position', widget: 'string', required: true }
+              - { label: 'Leta', name: 'years', widget: 'string', required: true }
+              - { label: 'Opis', name: 'description', widget: 'list', field: {label: 'Paragraph', name: 'Paragraph', widget: 'text'} }
+
+      - name: "education"
+        label: "Izobrazba"
+        format: "json"
+        file: "content/cv/education.json"
+        create: true
+        slug: "{{slug}}"
+        fields:
+          - label: "Entiteta"
+            name: "entries"
+            widget: "list"
+            fields:
+              - { label: 'Ustanova', name: 'entityName', widget: 'string', required: true }
+              - { label: 'Pozicija', name: 'position', widget: 'string', required: true }
+              - { label: 'Leta', name: 'years', widget: 'string', required: true }
+              - { label: 'Opis', name: 'description', widget: 'list', field: { label: 'Paragraph', name: 'Paragraph', widget: 'text' } }
+
+      - name: "otherHighlights"
+        label: "Ostali poudarki"
+        format: "json"
+        file: "content/cv/other-highlights.json"
+        create: true
+        slug: "{{slug}}"
+        fields:
+          - label: "Entiteta"
+            name: "entries"
+            widget: "list"
+            fields:
+              - { label: 'Poudarek', name: 'entityName', widget: 'string', required: true }
+              - { label: 'Naslov', name: 'position', widget: 'string', required: true }
+              - { label: 'Leta', name: 'years', widget: 'string', required: true }
+              - { label: 'Opis', name: 'description', widget: 'list', field: { label: 'Paragraph', name: 'Paragraph', widget: 'text' } }
