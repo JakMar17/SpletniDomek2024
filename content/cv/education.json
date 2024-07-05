@@ -1,0 +1,22 @@
+{
+  "entries": [
+    {
+      "entityName": "Fakulteta za računalništvo in informatiko",
+      "position": "Interdisciplinarni magistrski program multiumedija",
+      "years": "2021 - danes",
+      "description": [
+        "Izobraževanje na drugi bolonjski stopnji (magistrski študij) multimedija na Fakulteta za računalništvo in informatiko in Fakulteti za elektrotehniko Univerze v Ljubljani. V letu 2022 sem pridobil posebno pohvalo za zgledno opravljene študijske obveznosti dekanje fkaultete.",
+        "Trenutno kot absolvent zaključujem študij z magistrsko nalogo \"Rešitve pametnih mest v podeželski lokalni skupnosti\" pod mentorstvom prof. dr. Janeza Bešterja in mag. Luko Mali."
+      ]
+    },
+    {
+      "entityName": "Fakulteta za računalništvo in informatiko",
+      "position": "Univerzitetni program računalništvo in informatika",
+      "years": "2017 - 2021",
+      "description": [
+        "Obiskovanje prvo stopenjskega univerzitetnega programa računalništvo in informatika na Fakulteti za računalništvo in informatiko Univerze v Ljubljani.",
+        "V letu 2021 sem diplomiral z diplomsko nalogo \"Implementacija informacijskega sistema za medsebojno izmenjavo testnih primerov\" in pridobil naziv diplomirani inženir računalništva in informatike (UN)."
+      ]
+    }
+  ]
+}

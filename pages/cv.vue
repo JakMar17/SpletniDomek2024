@@ -11,8 +11,6 @@
     </div>
 
 
-
-
     <h2 class="header-h2">Izobrazba</h2>
     <div>
       <CvSplitRowComponent v-for="e of education" :key="e.position" v-bind="e"/>
@@ -43,7 +41,6 @@ useAsyncData('fetchOtherHighlights', () => queryContent('cv/other-highlights').f
 </script>
 
 <style lang="scss" scoped>
-
 
 
 </style>
