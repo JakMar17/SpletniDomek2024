@@ -25,10 +25,15 @@ export default defineNuxtConfig({
     },
     plugins: [
     ],
-    modules: [
-        '@nuxt/content',
-        'v-plausible'
-    ],
+    modules: ['@nuxt/content', 'v-plausible', ["@nuxtjs/google-fonts", {
+        families: {
+            'Noto Sans JP': [800],
+            'Inter Tight': {
+                wght: '100..900',
+                ital: '100..900'
+            }
+        }
+    }]],
     plausible: {
         init: {
             domain: 'ssvets.si',

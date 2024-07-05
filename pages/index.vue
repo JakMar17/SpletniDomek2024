@@ -1,56 +1,204 @@
 <template>
-    <div class="snap-y__wrapper">
-        <div class="snap-y__section">
-            <HomeSlideIntroComponent/>
-        </div>
+  <div class="container mb-6">
+    <div class="header__wrapper">
+      <h1 class="header-h1">Jakob</h1>
+      <h2 class="header-h2 is-gray">in to je moja zgodba na kratko</h2>
     </div>
+
+
+    <div class="grid">
+      <a id="aboutMe" class="grid__tile">
+
+        <div class="img__wrapper">
+          <img src="../assets/images/me.JPG"/>
+        </div>
+
+        <div class="title__wrapper">
+          <h3 class="title tile__title has-text-right has-text-white has-text-shadow-black">Moja zgodba</h3>
+          <div class="title tile__subtitle has-text-white has-text-right has-text-shadow-black">dolga je cesta z vasi do mesta</div>
+        </div>
+      </a>
+
+      <div class="div2 grid__tile is-flex is-justify-content-space-between pl-6 pt-6 is-flex-wrap-wrap" style="height: 20em; overflow: hidden">
+        <div style="width: 40%">
+          <h3 class="title tile__title">Majske igre</h3>
+          <div class="title tile__subtitle">uradna spletna stran največjega študentskega festivala</div>
+        </div>
+
+        <div class="is-flex is-justify-content-flex-end" style="margin-top: 2rem">
+          <img style="max-height: 20em; object-fit: cover" src="../assets/images/showcase/mi.png"/>
+        </div>
+
+      </div>
+
+
+      <div class="div3 grid__tile">
+        <h3 class="title tile__title">MarelaBudget</h3>
+      </div>
+      <div class="div4 grid__tile" style="background: red">
+        <h3 class="title tile__title">Ostali projekti</h3>
+      </div>
+      <div class="div5 grid__tile is-flex is-justify-content-space-between pl-6 pt-6 is-flex-wrap-wrap" style="height: 20em; overflow: hidden">
+        <div style="width: 80%">
+          <h3 class="title tile__title">Študentski svet stanovalcev</h3>
+          <div class="title tile__subtitle">spletna stran Študentskega sveta stanovalcev ŠDL</div>
+        </div>
+
+        <div class="is-flex is-justify-content-flex-end" style="margin-top: 2rem; flex-grow: 1">
+          <img style="max-height: 20em; object-fit: cover" src="../assets/images/showcase/sss.png"/>
+        </div>
+
+      </div>
+      <div class="div6 grid__tile is-flex is-justify-content-space-between is-flex-direction-column pl-6 pt-6">
+        <h3 class="title tile__title">Majske igre 2022</h3>
+        <div class="title tile__subtitle">mobilna aplikacija Majskih iger 2022 za Android naprave</div>
+        <div class="is-flex is-justify-content-flex-end">
+          <img style="max-height: 30em; object-fit: cover" src="../assets/images/showcase/mi-app.png"/>
+        </div>
+      </div>
+    </div>
+  </div>
 </template>
 
-<script lang="ts" setup>
-import {createSeoObject} from "~/utils/seo";
+<style scoped lang="scss">
 
-definePageMeta({
-    layout: "no-navbar-layout"
-});
+//.header {
+//  &__wrapper {
+//    margin-top: 3em;
+//    margin-bottom: 1em;
+//
+//    @media screen and (min-width: 768px) {
+//      margin-top: 6em;
+//      margin-bottom: 3em;
+//    }
+//  }
+//
+//  &__title {
+//    font-size: 36px;
+//    font-weight: 800;
+//    color: black;
+//    margin-bottom: 0.5rem !important;
+//
+//    @media screen and (min-width: 768px) {
+//      margin-bottom: 1rem !important;
+//      font-size: 56px;
+//    }
+//  }
+//
+//  &__subtitle {
+//    color: rgba(0, 0, 0, 0.5);
+//    font-size: 24px;
+//    font-weight: 400;
+//
+//    @media screen and (min-width: 768px) {
+//      font-weight: 700;
+//      font-size: 28px;
+//    }
+//  }
+//}
 
-useSeoMeta(createSeoObject());
-</script>
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
 
-<style lang="scss" scoped>
-@import "@/assets/styles/main.scss";
+  &__tile {
+    width: 100%;
+    min-height: 40em;
+    border-radius: 8px;
+    transition: 0.5s;
+    background: #f0f0f0;
 
+    &:hover {
+      $box-shadow: 10px 10px 10px 2px rgba(0, 0, 0, 0.125);
 
-.snap-y {
-    position: relative;
+      -webkit-box-shadow: $box-shadow;
+      -moz-box-shadow: $box-shadow;
+      box-shadow: $box-shadow;
+    }
 
+    @media screen and (min-width: 1024px) {
+      min-height: 20em;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 24px;
+
+    .div2 {
+      grid-area: 1 / 2 / 2 / 4;
+    }
+
+    .div3 {
+      grid-area: 2 / 2 / 3 / 4;
+    }
+
+    .div4 {
+      grid-area: 3 / 1 / 4 / 3;
+    }
+
+    .div5 {
+      grid-area: 4 / 1 / 5 / 3;
+    }
+
+    .div6 {
+      grid-area: 3 / 3 / 5 / 4;
+    }
+  }
+}
+
+#aboutMe {
+  height: 40em;
+  background: black;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+
+  .img {
     &__wrapper {
-        overflow: auto;
-        width: 100vw;
-        min-height: 100vh;
+      height: 80%;
+      object-fit: cover;
+      object-position: center center;
     }
+  }
 
-    &__section {
-        min-height: 100%;
-        scroll-snap-align: center;
-    }
+  .title__wrapper {
+    margin: 0 2vw 4rem 2vw;
+  }
+
+  @media screen and (min-width: 1024px) {
+    height: 42em;
+    grid-area: 1 / 1 / 3 / 2;
+  }
 }
 
-@media only screen and (min-width: 768px) {
-    .snap-y {
-        position: fixed;
+.tile {
+  &__title {
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+  }
 
-        &__wrapper {
-            width: 100vw;
-            height: 100vh;
-            scroll-snap-type: y mandatory;
-        }
-
-        &__section {
-            height: 100%;
-            scroll-snap-align: center;
-        }
-    }
+  &__subtitle {
+    font-size: 20px;
+  }
 }
 
+.has-text-shadow-black {
+  text-shadow: 2px 2px 5px black
+}
 
 </style>
+<script setup lang="ts">
+</script>

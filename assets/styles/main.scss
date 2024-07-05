@@ -1,6 +1,16 @@
 // Import Bulma's core
 @import 'node_modules/bulma/sass/utilities/_all';
-@import "flex";
+@import "headers";
+
+$inter-tight-font: "Inter Tight", sans-serif;
+
+.button {
+    font-family: $inter-tight-font;
+}
+
+.title {
+    font-family: $inter-tight-font;
+}
 
 // Set your colors
 $primary: #0072AF;
@@ -123,7 +133,7 @@ body {
     //background-image: url('@/assets/images/svgs/stacked-waves-haikei.svg');
     //background-repeat: no-repeat;
     //background-size: cover;
-    background: $background;
+    background: white;
     min-height: 100vh;
 }
 

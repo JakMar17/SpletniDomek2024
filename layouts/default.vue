@@ -1,7 +1,8 @@
 <template>
-    <Navigation-Navbar/>
-    <div style="min-height: 47vh">
-        <slot/>
+  <div class="is-flex is-flex-direction-column" style="min-height: 100vh">
+    <NavigationHeaderComponent></NavigationHeaderComponent>
+    <div style="flex-grow: 1">
+      <slot/>
     </div>
-    <Navigation-Footer/>
+  </div>
 </template>
