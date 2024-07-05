@@ -10,7 +10,7 @@
       <a id="aboutMe" class="grid__tile">
 
         <div class="img__wrapper">
-          <img src="../assets/images/me.JPG"/>
+          <img src="../assets/images/me.jpg"/>
         </div>
 
         <div class="title__wrapper">
