@@ -59,3 +59,22 @@ collections:
               - { label: 'Naslov', name: 'position', widget: 'string', required: true }
               - { label: 'Leta', name: 'years', widget: 'string', required: true }
               - { label: 'Opis', name: 'description', widget: 'list', field: { label: 'Paragraph', name: 'Paragraph', widget: 'text' } }
+
+  - name: "me"
+    label: "O meni"
+    format: "json"
+    files:
+      - name: "highlightedTools"
+        label: "Najpogosteje uporabljena orodja"
+        format: "json"
+        file: "content/cv/highlighted-tools.json"
+        create: true
+        slug: "{{slug}}"
+        fields:
+          - label: "Entiteta"
+            name: "entries"
+            widget: "list"
+            fields:
+              - { label: 'Ime orodja', name: 'title', widget: 'string', required: true }
+              - { label: 'Opis', name: 'description', widget: 'string', required: true }
+              - { label: 'Ikona', name: 'icon', widget: 'string', required: true }

@@ -1,0 +1,44 @@
+{
+  "entries": [
+    {
+      "title": "NuxtJS",
+      "description": "Razvoj spletnih strani",
+      "icon": "ri-vuejs-fill"
+    },
+    {
+      "title": "Angular",
+      "description": "Razvoj spletnih aplikacij",
+      "icon": "ri-angularjs-fill"
+    },
+    {
+      "title": "Flutter",
+      "description": "Razvoj mobilnih aplikacij",
+      "icon": "ri-flutter-fill"
+    },
+    {
+      "title": "BulmaCss",
+      "description": "Osnova za gradnjo stilov CSS",
+      "icon": "ri-css3-fill"
+    },
+    {
+      "title": "SpringBoot",
+      "description": "Razvoj zalednih sistemov",
+      "icon": "ri-server-fill"
+    },
+    {
+      "title": "MariaDB & PostgreSQL",
+      "description": "Podatkovne baze za hrambo podatkov",
+      "icon": "ri-database-fill"
+    },
+    {
+      "title": "Docker Compose",
+      "description": "Orodje za lastno gostovanje storitev",
+      "icon": "ri-ubuntu-fill"
+    },
+    {
+      "title": "IntelliJ & VSCode",
+      "description": "Najpogosteje uporabljen IDE za razvoj",
+      "icon": "ri-terminal-window-fill"
+    }
+  ]
+}

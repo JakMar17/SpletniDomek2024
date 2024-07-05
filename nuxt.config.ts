@@ -36,7 +36,7 @@ export default defineNuxtConfig({
     }]],
     plausible: {
         init: {
-            domain: 'ssvets.si',
+            domain: 'jakob.marela.team',
             apiHost: 'https://plausible.sven.marela.team/',
             trackLocalhost: false
         },

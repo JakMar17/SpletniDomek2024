@@ -35,115 +35,19 @@
     <h2 class="header-h2" style="margin-top: 4rem; margin-bottom: 2rem">Najpogosteje uporabljena orodja</h2>
 
     <div class="is-flex is-justify-content-space-between is-flex-wrap-wrap">
-      <div style="width: 45%; min-width: 20em; margin-bottom: 2rem">
-        <div class="is-flex" style="gap: 2rem">
-          <div style="height: 4rem; width: 4rem; background: #f0f0f0; border-radius: 8px; display: flex; justify-content: center; align-items: center">
-            <i style="font-size: 2rem" class="ri-vuejs-fill"/>
-          </div>
-          <div style="flex-grow: 1">
-            <div style="font-family: 'Inter Tight', serif; font-size: 18px; font-weight: 600; letter-spacing: 1px">NuxtJS</div>
-            <div style="border-bottom: 1px solid black; margin: 0.25rem 0;"></div>
-            <div>Razvoj spletnih strani</div>
-          </div>
-        </div>
-      </div>
-
-      <div style="width: 45%; ; min-width: 20em; margin-bottom: 2rem">
-        <div class="is-flex" style="gap: 2rem">
-          <div style="height: 4rem; width: 4rem; background: #f0f0f0; border-radius: 8px; display: flex; justify-content: center; align-items: center">
-            <i style="font-size: 2rem" class="ri-angularjs-fill"/>
-          </div>
-          <div style="flex-grow: 1">
-            <div style="font-family: 'Inter Tight', serif; font-size: 18px; font-weight: 600; letter-spacing: 1px">Angular</div>
-            <div style="border-bottom: 1px solid black; margin: 0.25rem 0;"></div>
-            <div>Razvoj spletnih aplikacij</div>
-          </div>
-        </div>
-      </div>
-
-      <div style="width: 45%; ; min-width: 20em; margin-bottom: 2rem">
-        <div class="is-flex" style="gap: 2rem">
-          <div style="height: 4rem; width: 4rem; background: #f0f0f0; border-radius: 8px; display: flex; justify-content: center; align-items: center">
-            <i style="font-size: 2rem" class="ri-flutter-fill"/>
-          </div>
-          <div style="flex-grow: 1">
-            <div style="font-family: 'Inter Tight', serif; font-size: 18px; font-weight: 600; letter-spacing: 1px">Flutter</div>
-            <div style="border-bottom: 1px solid black; margin: 0.25rem 0;"></div>
-            <div>Razvoj mobilnih aplikacij</div>
-          </div>
-        </div>
-      </div>
-
-      <div style="width: 45%; ; min-width: 20em; margin-bottom: 2rem">
-        <div class="is-flex" style="gap: 2rem">
-          <div style="height: 4rem; width: 4rem; background: #f0f0f0; border-radius: 8px; display: flex; justify-content: center; align-items: center">
-            <i style="font-size: 2rem" class="ri-css3-fill"/>
-          </div>
-          <div style="flex-grow: 1">
-            <div style="font-family: 'Inter Tight', serif; font-size: 18px; font-weight: 600; letter-spacing: 1px">BulmaCSS</div>
-            <div style="border-bottom: 1px solid black; margin: 0.25rem 0;"></div>
-            <div>Osnova za gradnjo stilov CSS</div>
-          </div>
-        </div>
-      </div>
-
-      <div style="width: 45%; ; min-width: 20em; margin-bottom: 2rem">
-        <div class="is-flex" style="gap: 2rem">
-          <div style="height: 4rem; width: 4rem; background: #f0f0f0; border-radius: 8px; display: flex; justify-content: center; align-items: center">
-            <i style="font-size: 2rem" class="ri-server-fill"/>
-          </div>
-          <div style="flex-grow: 1">
-            <div style="font-family: 'Inter Tight', serif; font-size: 18px; font-weight: 600; letter-spacing: 1px">SpringBoot</div>
-            <div style="border-bottom: 1px solid black; margin: 0.25rem 0;"></div>
-            <div>Razvoj zalednih sistemov</div>
-          </div>
-        </div>
-      </div>
-
-      <div style="width: 45%; ; min-width: 20em; margin-bottom: 2rem">
-        <div class="is-flex" style="gap: 2rem">
-          <div style="height: 4rem; width: 4rem; background: #f0f0f0; border-radius: 8px; display: flex; justify-content: center; align-items: center">
-            <i style="font-size: 2rem" class="ri-database-fill"/>
-          </div>
-          <div style="flex-grow: 1">
-            <div style="font-family: 'Inter Tight', serif; font-size: 18px; font-weight: 600; letter-spacing: 1px">MariaDB & PostgreSQL</div>
-            <div style="border-bottom: 1px solid black; margin: 0.25rem 0;"></div>
-            <div>Podatkovne baze za hrambo podatkov</div>
-          </div>
-        </div>
-      </div>
-
-      <div style="width: 45%; ; min-width: 20em; margin-bottom: 2rem">
-        <div class="is-flex" style="gap: 2rem">
-          <div style="height: 4rem; width: 4rem; background: #f0f0f0; border-radius: 8px; display: flex; justify-content: center; align-items: center">
-            <i style="font-size: 2rem" class="ri-ubuntu-fill"/>
-          </div>
-          <div style="flex-grow: 1">
-            <div style="font-family: 'Inter Tight', serif; font-size: 18px; font-weight: 600; letter-spacing: 1px">Docker Compose</div>
-            <div style="border-bottom: 1px solid black; margin: 0.25rem 0;"></div>
-            <div>Orodje za lastno gostovanje storitev</div>
-          </div>
-        </div>
-      </div>
-
-      <div style="width: 45%; ; min-width: 20em; margin-bottom: 2rem">
-        <div class="is-flex" style="gap: 2rem">
-          <div style="height: 4rem; width: 4rem; background: #f0f0f0; border-radius: 8px; display: flex; justify-content: center; align-items: center">
-            <i style="font-size: 2rem" class="ri-terminal-window-fill"/>
-          </div>
-          <div style="flex-grow: 1">
-            <div style="font-family: 'Inter Tight', serif; font-size: 18px; font-weight: 600; letter-spacing: 1px">IntelliJ & VSCode</div>
-            <div style="border-bottom: 1px solid black; margin: 0.25rem 0;"></div>
-            <div>Najpogosteje uporabljen IDE za razvoj</div>
-          </div>
-        </div>
-      </div>
+      <CardTechnologyComponent v-for="h of highlightedTools" :key="h.icon" v-bind="h"/>
     </div>
 
   </div>
 
 </template>
 <script setup lang="ts">
+import {HighlightedToolModel} from "~/models";
+
+const highlightedTools = ref<HighlightedToolModel[] | null>(null);
+
+useAsyncData('fetchHighlightedTools', () => queryContent('cv/highlighted-tools').findOne()).then(({data}) => highlightedTools.value = data.value.entries);
+
 </script>
 
 <style scoped lang="scss">
