@@ -4,11 +4,15 @@
     }
 
     & > h1 {
-        @extend .title, .is-1;
+        @extend .header-h2;
     }
 
     & > h2 {
-        @extend .title, .is-2;
+        @extend .header-h2;
+
+        a {
+            color: unset;
+        }
     }
 
     & > h3 {
@@ -31,7 +35,8 @@
         font-style: italic;
         margin: 1em 0 1em 0.5em;
         padding-left: 1em;
-        border-left: solid 0.25em $primary-light;
+        border-left: solid 0.25em #f0f0f0;
+        background: rgba(#f0f0f0, 0.5);
     }
 
     & > pre {

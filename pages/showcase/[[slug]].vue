@@ -27,7 +27,7 @@
         </div>
 
         <div class="content intro__content">
-          <ContentRendererMarkdown :value="introParsed"/>
+          <ContentRendererMarkdown :value="introParsed" class="markdown"/>
         </div>
       </div>
     </div>
@@ -36,7 +36,7 @@
       <div class="description__supertitle">{{ paragraph.superTitle }}</div>
       <h3 class="header-h2">{{ paragraph.title }}</h3>
       <div v-if="paragraph.content != null" class="content">
-        <ContentRendererMarkdown :value="paragraph.content"/>
+        <ContentRendererMarkdown :value="paragraph.content" class="markdown"/>
         <div>
         </div>
       </div>
@@ -60,7 +60,12 @@ useAsyncData('fetchShowcase', () => queryContent(`showcases/${route.params.slug}
   parseMarkdown(showcase.value?.highlightIntro).then((parsed: string) => introParsed.value = parsed);
 
   Promise.all(showcase.value?.descriptions.map(async (desc) => {
-    desc.content = await parseMarkdown(desc.content);
+    try {
+      const parsed = await parseMarkdown(desc.content);
+      desc.content = parsed;
+    } catch(e) {
+      console.error(e)
+    }
     return desc;
   })).then((res) => paragraphsParsed.value = res)
 
