@@ -11,29 +11,29 @@
         <a v-if="showcase?.link" :href="showcase.link" target="_blank" class="button is-dark is-rounded">Spletna stran</a>
       </div>
 
-      <div v-if="showcase?.coverImage" style="max-height: 30em; width: 100%; margin: 2rem 0 3rem 0">
-        <img style="height: 30em; width: 100%; object-fit: cover; object-position: center" :src="showcase?.coverImage"/>
+      <div id="cover-img" v-if="showcase?.coverImage">
+        <img :src="showcase?.coverImage"/>
       </div>
 
       <div class="is-flex is-justify-content-space-between is-flex-wrap-wrap">
-        <div style="width: 30%;">
+        <div class="intro__highlights">
 
-          <div v-for="h of showcase?.highlights" :key="h.highlightTitle" style="margin-bottom: 2rem">
+          <div v-for="h of showcase?.highlights" :key="h.highlightTitle" class="intro__highlight">
             <h3 class="header-h3 pb-0">{{ h.highlightTitle }}</h3>
-            <div style="font-family: 'Inter Tight', serif; font-weight: 600; padding-left: 1rem">
+            <div class="intro__highlight__content">
               <div v-for="d of h.highlightData" :key="d">{{ d }}</div>
             </div>
           </div>
         </div>
 
-        <div style="width: 66%; align-self: stretch" class="content">
+        <div class="content intro__content">
           <ContentRendererMarkdown :value="introParsed"/>
         </div>
       </div>
     </div>
 
-    <div v-for="paragraph of paragraphsParsed" :key="paragraph.title" style="margin-bottom: 3rem">
-      <div class="header-h3" style="font-size: 18px; padding-bottom: 0;">{{ paragraph.superTitle }}</div>
+    <div v-for="paragraph of paragraphsParsed" :key="paragraph.title" class="description">
+      <div class="description__supertitle">{{ paragraph.superTitle }}</div>
       <h3 class="header-h2">{{ paragraph.title }}</h3>
       <div v-if="paragraph.content != null" class="content">
         <ContentRendererMarkdown :value="paragraph.content"/>
@@ -65,6 +65,59 @@ useAsyncData('fetchShowcase', () => queryContent(`showcases/${route.params.slug}
   })).then((res) => paragraphsParsed.value = res)
 
 });
-
-
 </script>
+
+<style lang="scss" scoped>
+
+#cover-img {
+  max-height: 30em;
+  width: 100%;
+  margin: 2rem 0 3rem 0;
+
+  img {
+    height: 30em;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+.intro {
+
+  &__highlights {
+    width: 100%;
+
+    @media screen and (min-width: 768px) {
+      width: 30%;
+    }
+  }
+
+  &__highlight {
+    margin-bottom: 2rem;
+
+    &__content {
+      font-family: 'Inter Tight', serif;
+      font-weight: 600;
+      padding-left: 1rem;
+    }
+  }
+
+  &__content {
+    @media screen and (min-width: 768px) {
+      width: 66%;
+      align-self: stretch;
+    }
+  }
+}
+
+.description {
+  margin-bottom: 3rem;
+
+  &__supertitle {
+    font-weight: 200;
+    font-size: 18px;
+    padding-bottom: 0;
+  }
+}
+
+</style>
