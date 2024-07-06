@@ -5,24 +5,11 @@
     </NuxtLink>
     <div class="nav__wrapper is-hidden-touch">
       <div class="is-flex nav__buttons">
-        <NuxtLink to="projekti" class="button is-white is-rounded" :class="{'link--active': isActive('projekti')}">Projekti</NuxtLink>
-        <NuxtLink to="cv" class="button is-white is-rounded" :class="{'link--active': isActive('cv')}">Izkušnje</NuxtLink>
-        <NuxtLink to="jaz" class="button is-white is-rounded" :class="{'link--active': isActive('jaz')}">O meni</NuxtLink>
+        <NuxtLink v-for="[link, name] of urls" :key="link" :to="link" class="button is-white is-rounded" :class="{'link--active': isActive(link)}">{{ name }}</NuxtLink>
       </div>
     </div>
     <div class="is-flex is-align-items-center is-justify-content-flex-end social__wrapper is-hidden-touch">
-      <a href="https://github.com/jakmar17" target="_blank" class="button__rounded is-dark">
-        <i class="ri-github-fill"></i>
-      </a>
-      <a href="https://www.linkedin.com/in/jakmar17" target="_blank" class="button__rounded is-dark">
-        <i class="ri-linkedin-fill"></i>
-      </a>
-      <a href="mailto:jakob.marusic17@gmail.com" target="_blank" class="button__rounded is-dark">
-        <i class="ri-mail-open-line"></i>
-      </a>
-      <a href="https://facebook.com/jakmar17" target="_blank" class="button__rounded is-dark">
-        <i class="ri-facebook-fill"></i>
-      </a>
+      <NavigationExternalLinksComponent/>
     </div>
 
     <div class="is-hidden-desktop">
@@ -32,14 +19,28 @@
     </div>
 
   </div>
-  <div id="mobileMenu" ref="mobileMenu" v-show="isMobileMenuVisible">
-    <div class="is-flex is-justify-content-space-between is-align-items-center" style="min-height: 8em; margin: 0 4em">
-        <NuxtLink to="/" class="title mb-0" style="font-weight: 800; font-size: 32px; flex-grow: 1">
-          JM
+  <div id="mobileMenu" ref="mobileMenu" v-if="isMobileMenuVisible" class="is-flex is-flex-direction-column is-align-items-center is-justify-content-space-between">
+    <div class="is-flex is-justify-content-space-between is-align-items-center" style="min-height: 8em; margin: 0 4em; align-self: stretch">
+      <NuxtLink to="/" class="title mb-0" style="font-weight: 800; font-size: 32px; flex-grow: 1">
+        JM
+      </NuxtLink>
+      <a @click="onMobileMenuToggle()" class="button__rounded is-dark">
+        <i class="ri-close-line"></i>
+      </a>
+    </div>
+
+    <div class="is-flex is-flex-direction-column is-justify-content-center is-align-items-center" style="gap: 1rem;">
+      <div v-for="[link, name] of urls" :key="link">
+        <NuxtLink :to="link" class="button is-white is-rounded" :class="{'link--active': isActive(link)}">
+        <span style="font-family: 'Inter Tight', serif; font-size: 28px; font-weight: 500; letter-spacing: 1.5px">
+          {{ name }}
+        </span>
         </NuxtLink>
-        <a @click="onMobileMenuToggle()" class="button__rounded is-dark">
-          <i class="ri-close-line"></i>
-        </a>
+      </div>
+    </div>
+
+    <div class="is-flex" style="gap: 0.55em">
+      <NavigationExternalLinksComponent/>
     </div>
   </div>
 </template>
@@ -50,17 +51,32 @@ const route = useRoute();
 const isMobileMenuVisible = ref(false);
 const mobileMenu = ref(null);
 
+const urls = [
+  ['projekti', 'Projekti'],
+  ['cv', 'Izkušnje'],
+  ['jaz', 'O meni']
+]
+
 const onMobileMenuToggle = () => {
   isMobileMenuVisible.value = !isMobileMenuVisible.value;
-  mobileMenu.value.style.opacity = isMobileMenuVisible.value ? 0 : 1;
   setTimeout(() => {
-    mobileMenu.value.style.opacity = isMobileMenuVisible.value ? 1 : 0;
-  }, 500)
+    mobileMenu.value.style.opacity = isMobileMenuVisible.value ? 0 : 1;
+    setTimeout(() => {
+      mobileMenu.value.style.opacity = isMobileMenuVisible.value ? 1 : 0;
+    }, 400)
+  }, 0)
 };
 
 
 const isActive = (linkName: string): boolean =>
     route.fullPath.includes(linkName);
+
+watch(() => route.fullPath, () => {
+  if (isMobileMenuVisible.value) {
+    onMobileMenuToggle();
+  }
+})
+
 
 </script>
 
@@ -135,6 +151,7 @@ $box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.125);
   background: white;
   z-index: 99;
   opacity: 0;
-  transition: opacity 0.5s;
+  transition: opacity 0.4s;
+  padding-bottom: 8rem;
 }
 </style>
