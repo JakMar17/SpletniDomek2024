@@ -13,9 +13,9 @@
     </div>
 
     <div class="is-hidden-desktop">
-      <a @click="onMobileMenuToggle()" class="button__rounded is-dark">
+      <button @click="onMobileMenuToggle()" class="button__rounded is-dark">
         <i class="ri-menu-line"></i>
-      </a>
+      </button>
     </div>
 
   </div>
