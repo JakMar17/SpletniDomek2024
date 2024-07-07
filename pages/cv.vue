@@ -37,6 +37,7 @@ useAsyncData('fetchWorkExperiences', () => queryContent('cv/work-experiences').f
 useAsyncData('fetchEducation', () => queryContent('cv/education').findOne()).then(({data}) => education.value = data.value.entries);
 useAsyncData('fetchOtherHighlights', () => queryContent('cv/other-highlights').findOne()).then(({data}) => otherHighlights.value = data.value.entries);
 
+useServerSeoMeta(createSeoObject({title: 'Moje izkušnje - Jakobov CV', image: '/images/me.jpg.webp', description: 'Nekaj o mojih dosedanjih izkušnjah in znanjih.'}))
 
 </script>
 

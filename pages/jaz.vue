@@ -47,6 +47,7 @@ import {HighlightedToolModel} from "~/models";
 const highlightedTools = ref<HighlightedToolModel[] | null>(null);
 
 useAsyncData('fetchHighlightedTools', () => queryContent('cv/highlighted-tools').findOne()).then(({data}) => highlightedTools.value = data.value.entries);
+useServerSeoMeta(createSeoObject({title: 'Kdo je Jakob?', image: '/images/me.jpg.webp', description: 'Kdo sem in kaj znam?'}))
 
 </script>
 

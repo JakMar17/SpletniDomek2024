@@ -69,6 +69,10 @@
   </div>
 </template>
 
+<script setup lang="ts">
+useServerSeoMeta(createSeoObject({title: 'Jakobov spletni domek', image: '/images/me.jpg.webp', description: 'Jakob je programer in to je njegov spletni domek na katerem lahko izveš s čim se ukvarjam, kaj znam in kaj delam.'}))
+</script>
+
 <style scoped lang="scss">
 
 //.header {

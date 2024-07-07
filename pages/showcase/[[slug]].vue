@@ -58,6 +58,7 @@ const paragraphsParsed = ref<ShowcaseDescriptionModel[]>([]);
 useAsyncData('fetchShowcase', () => queryContent(`showcases/${route.params.slug}`).findOne()).then(({data}) => {
   showcase.value = data.value
   parseMarkdown(showcase.value?.highlightIntro).then((parsed: string) => introParsed.value = parsed);
+  useServerSeoMeta(createSeoObject({title: showcase.value?.title, image: showcase.value?.coverImage, description: showcase.value?.highlightIntro}))
 
   Promise.all(showcase.value?.descriptions.map(async (desc) => {
     try {
