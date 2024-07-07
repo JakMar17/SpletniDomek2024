@@ -88,4 +88,29 @@ descriptions:
 
 
       ![](/img/dodajte-nekaj-besedila-telesa.png)
+  - superTitle: Lighthouse
+    title: Optimizacija kvalitete spletne strani
+    content: >-
+      Spletna stran je bila s pomočjo testa **Lighthouse** posebej optimizirana
+      za **hitrost, dostopnost in SEO.** 
+
+
+      Določene dobre prakse, ki so bile upoštevane pri izdelavi spletne strani:
+
+
+      * naknadno nalaganje fotografij *(ang. lazy loading)*
+
+      * uporaba formata `webp` za grafike in zmanjšane velikosti grafik
+
+      * uporaba html značk v skladu z njihovim namenom *(npr. `a` `h*` `button`)*
+
+      * uporaba `alt` in ostalih značk namenjenih izboljšanju dostopnosti spletnega mesta
+
+      * uporaba dovoljšnih kontrastov, velikosti pisav in barv za izboljšanje dostopnosti spletnega mesta
+
+
+      Uporaba dobrih praks je proizvedel rezultate LIghthouse testa, kjer so vse kategorije ocenjene z oceno 90 ali več tako na namiznih napravah kot na mobilnih klientih.
+
+
+      ![](/img/lighthouse.png)
 ---
