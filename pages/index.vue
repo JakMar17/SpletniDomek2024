@@ -9,7 +9,7 @@
     <div class="grid">
       <NuxtLink to="/jaz" id="aboutMe" class="grid__tile">
         <div class="img__wrapper">
-          <img src="../assets/images/me.jpg.webp" loading="lazy" alt="Portret avtorja strani - Jakoba"/>
+          <img src="../assets/images/me.jpg.webp" alt="Portret avtorja strani - Jakoba"/>
         </div>
         <div class="title__wrapper">
           <h3 class="title tile__title has-text-right has-text-white has-text-shadow-black">Moja zgodba</h3>
@@ -44,7 +44,7 @@
           <div class="title tile__subtitle has-text-white">po inspiraciji minimalističnega Mondrianovega platna</div>
         </div>
         <div class="is-flex is-justify-content-flex-end" style="margin-top: 2rem; flex-grow: 1">
-          <img style="max-height: 20em; object-fit: cover" src="../assets/images/showcase/mondrian.jpg.webp" loading="lazy" lat="Mondrianovi kvadrati"/>
+          <img style="max-height: 20em; object-fit: cover" src="../assets/images/showcase/mondrian.jpg.webp" loading="lazy" alt="Mondrianovi kvadrati"/>
         </div>
       </NuxtLink>
 

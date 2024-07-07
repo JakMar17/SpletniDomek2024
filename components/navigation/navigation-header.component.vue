@@ -13,7 +13,7 @@
     </div>
 
     <div class="is-hidden-desktop">
-      <button @click="onMobileMenuToggle()" class="button__rounded is-dark">
+      <button @click="onMobileMenuToggle()" class="button__rounded is-dark" aria-label="Odpri navigacijski menu">
         <i class="ri-menu-line"></i>
       </button>
     </div>
@@ -24,9 +24,9 @@
       <NuxtLink to="/" class="title mb-0" style="font-weight: 800; font-size: 32px; flex-grow: 1">
         JM
       </NuxtLink>
-      <a @click="onMobileMenuToggle()" class="button__rounded is-dark">
+      <button @click="onMobileMenuToggle()" class="button__rounded is-dark" aria-label="Zapri navigacijski menu">
         <i class="ri-close-line"></i>
-      </a>
+      </button>
     </div>
 
     <div class="is-flex is-flex-direction-column is-justify-content-center is-align-items-center" style="gap: 1rem;">
