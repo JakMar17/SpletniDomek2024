@@ -9,7 +9,7 @@
     <div class="grid">
       <NuxtLink to="/jaz" id="aboutMe" class="grid__tile">
         <div class="img__wrapper">
-          <img src="../assets/images/me.jpg.webp" alt="Portret avtorja strani - Jakoba"/>
+          <img src="../assets/images/me-sm.jpg.webp" alt="Portret avtorja strani - Jakoba"/>
         </div>
         <div class="title__wrapper">
           <h3 class="title tile__title has-text-right has-text-white has-text-shadow-black">Moja zgodba</h3>
