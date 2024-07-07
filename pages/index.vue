@@ -9,7 +9,7 @@
     <div class="grid">
       <NuxtLink to="/jaz" id="aboutMe" class="grid__tile">
         <div class="img__wrapper">
-          <img src="../assets/images/me.jpg"/>
+          <img src="../assets/images/me.jpg.webp" loading="lazy"/>
         </div>
         <div class="title__wrapper">
           <h3 class="title tile__title has-text-right has-text-white has-text-shadow-black">Moja zgodba</h3>
@@ -23,7 +23,7 @@
           <div class="title tile__subtitle">uradna spletna stran največjega študentskega festivala</div>
         </div>
         <div class="is-flex is-justify-content-flex-end" style="margin-top: 2rem">
-          <img style="max-height: 20em; object-fit: cover" src="../assets/images/showcase/mi.png"/>
+          <img style="max-height: 20em; object-fit: cover" src="../assets/images/showcase/mi.png.webp" loading="lazy"/>
         </div>
       </a>
 
@@ -33,7 +33,7 @@
           <div class="title tile__subtitle">idejni vodja dobrodelne majice po največjem požaru v zgodovini Slovenije</div>
         </div>
         <div class="is-flex is-justify-content-flex-end" style="margin-top: 2rem; flex-grow: 1">
-          <img style="max-height: 20em; object-fit: cover" src="../assets/images/showcase/majca_za_kras.png"/>
+          <img style="max-height: 20em; object-fit: cover" src="../assets/images/showcase/majca_za_kras.png.webp" loading="lazy"/>
         </div>
       </a>
 
@@ -44,7 +44,7 @@
           <div class="title tile__subtitle has-text-white">po inspiraciji minimalističnega Mondrianovega platna</div>
         </div>
         <div class="is-flex is-justify-content-flex-end" style="margin-top: 2rem; flex-grow: 1">
-          <img style="max-height: 20em; object-fit: cover" src="../assets/images/showcase/mondrian.jpg"/>
+          <img style="max-height: 20em; object-fit: cover" src="../assets/images/showcase/mondrian.jpg.webp" loading="lazy"/>
         </div>
       </NuxtLink>
 
@@ -54,7 +54,7 @@
           <div class="title tile__subtitle">spletna stran Študentskega sveta stanovalcev ŠDL</div>
         </div>
         <div class="is-flex is-justify-content-flex-end" style="margin-top: 2rem; flex-grow: 1">
-          <img style="max-height: 20em; object-fit: cover" src="../assets/images/showcase/sss.png"/>
+          <img style="max-height: 20em; object-fit: cover" src="../assets/images/showcase/sss.png.webp" loading="lazy"/>
         </div>
       </a>
 
@@ -62,7 +62,7 @@
         <h3 class="title tile__title">Majske igre 2022</h3>
         <div class="title tile__subtitle">mobilna aplikacija Majskih iger 2022 za Android naprave</div>
         <div class="is-flex is-justify-content-flex-end">
-          <img style="max-height: 30em; object-fit: cover" src="../assets/images/showcase/mi-app.png"/>
+          <img style="max-height: 30em; object-fit: cover" src="../assets/images/showcase/mi-app.png.webp" loading="lazy"/>
         </div>
       </a>
     </div>

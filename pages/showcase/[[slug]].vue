@@ -12,7 +12,7 @@
       </div>
 
       <div id="cover-img" v-if="showcase?.coverImage">
-        <img :src="showcase?.coverImage"/>
+        <img :src="showcase?.coverImage" loading="lazy"/>
       </div>
 
       <div class="is-flex is-justify-content-space-between is-flex-wrap-wrap">

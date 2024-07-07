@@ -8,7 +8,7 @@
 
 
         <div class="about-me__img-wrapper">
-          <img class="about-me__img" src="../assets/images/me-2.jpg"/>
+          <img class="about-me__img" src="../assets/images/me-2.jpg.webp" loading="lazy"/>
         </div>
 
 
