@@ -53,8 +53,8 @@ const mobileMenu = ref(null);
 
 const urls = [
   // ['projekti', 'Projekti'],
-  ['cv', 'Izkušnje'],
-  ['jaz', 'O meni']
+  ['/cv', 'Izkušnje'],
+  ['/jaz', 'O meni']
 ]
 
 const onMobileMenuToggle = () => {
