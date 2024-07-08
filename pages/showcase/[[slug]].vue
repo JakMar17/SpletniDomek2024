@@ -60,15 +60,17 @@ useAsyncData('fetchShowcase', () => queryContent(`showcases/${route.params.slug}
   parseMarkdown(showcase.value?.highlightIntro).then((parsed: string) => introParsed.value = parsed);
   useServerSeoMeta(createSeoObject({title: showcase.value?.title, image: showcase.value?.coverImage, description: showcase.value?.highlightIntro}))
 
-  Promise.all(showcase.value?.descriptions.map(async (desc) => {
-    try {
-      const parsed = await parseMarkdown(desc.content);
-      desc.content = parsed;
-    } catch(e) {
-      console.error(e)
-    }
-    return desc;
-  })).then((res) => paragraphsParsed.value = res)
+  setTimeout(() => {
+    Promise.all(showcase.value?.descriptions.map(async (desc) => {
+      try {
+        const parsed = await parseMarkdown(desc.content);
+        desc.content = parsed;
+      } catch(e) {
+        console.error(e)
+      }
+      return desc;
+    })).then((res) => paragraphsParsed.value = res)
+  }, 100)
 
 });
 </script>

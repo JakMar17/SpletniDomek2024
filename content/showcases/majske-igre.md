@@ -38,7 +38,7 @@ descriptions:
       Stili spletne strani in JS skripte se v okrog 60% časa niso pravilno in popolno naložile, kar je privedlo k temu, da so na strani manjkale slike, stili so bili "pokvarjeni". Hkrati stran ni bila uporabna na mobilnih napravah, saj se določene komponente niso prikazovale.
 
 
-      ![](/img/stara-stran.png)
+      ![](/img/mi-showcase-1.png)
   - superTitle: Zasnova prenovljenega spletnega mesta
     title: Pot k prenovi
     content: >-
@@ -63,7 +63,7 @@ descriptions:
       Edina omejitev, ki jo infrastruktura predstavlja, je omejitev minut gradnje na sistemu GitHub actions, vendar v letošnjem letu težav z omejitvami nismo imeli.
 
 
-      ![](/img/122b41.png)
+      ![](/img/mi-showcase-2.png)
   - superTitle: Ohranitev celostne grafične podobe
     title: Grafična podoba spletnega mesta
     content: >-
@@ -76,8 +76,14 @@ descriptions:
       Pri tem je primarna barva uporabljena na vseh podstraneh, s tem se ohranja celota spletnega mesta, posamezne barve podkategorij pa so uporabljene za posamezna področja.
 
 
-      ![](/img/122b41-1-.png)
+      ![](/img/mi-showcase-3.png)
 
 
       Ohranjeni, prilagojeno, so bili tudi elementi stare spletne strani. S tem smo omogočili uporabnikom najenostavnejšo migracijo na novo spletno stran.
+  - superTitle: Rezultat
+    title: Končna podoba
+    content: |-
+      ![](/img/mi-showcase-5.png)
+
+      ![](/img/mi-showcase-6.png)
 ---
