@@ -4,12 +4,9 @@
       <h1 class="header-h1">
         {{ showcase?.title }}
       </h1>
-      <div class="is-flex is-justify-content-space-between is-align-items-center">
-        <h2 class="header-h2 mb-0 pb-0">
-          {{ showcase?.subtitle }}
-        </h2>
-        <a v-if="showcase?.link" :href="showcase.link" target="_blank" class="button is-dark is-rounded">Spletna stran</a>
-      </div>
+      <h2 class="header-h2 mb-0 pb-0">
+        {{ showcase?.subtitle }}
+      </h2>
 
       <div id="cover-img" v-if="showcase?.coverImage">
         <img :src="showcase?.coverImage" loading="lazy" alt="Slika kontesta"/>
@@ -17,7 +14,14 @@
 
       <div class="is-flex is-justify-content-space-between is-flex-wrap-wrap" data-aos="fade-in-up">
         <div class="intro__highlights">
-
+          <div v-if="(showcase?.links?.length ?? 0) > 0" class="intro__highlight">
+            <h3 class="header-h3 pb-0">Povezave</h3>
+            <div class="intro__highlight__content">
+              <div v-for="link of showcase?.links" :key="link.linkTitle" class="link">
+                <a :href="link.linkUrl" target="_blank">{{ link.linkTitle }}</a>
+              </div>
+            </div>
+          </div>
           <div v-for="h of showcase?.highlights" :key="h.highlightTitle" class="intro__highlight">
             <h3 class="header-h3 pb-0">{{ h.highlightTitle }}</h3>
             <div class="intro__highlight__content">
@@ -65,7 +69,7 @@ useAsyncData('fetchShowcase', () => queryContent(`showcases/${route.params.slug}
       try {
         const parsed = await parseMarkdown(desc.content);
         desc.content = parsed;
-      } catch(e) {
+      } catch (e) {
         console.error(e)
       }
       return desc;
@@ -107,6 +111,15 @@ useAsyncData('fetchShowcase', () => queryContent(`showcases/${route.params.slug}
       font-family: 'Inter Tight', serif;
       font-weight: 600;
       padding-left: 1rem;
+
+      .link {
+        margin-bottom: 0.25rem;
+        text-decoration: 1px underline;
+
+        a {
+          color: unset;
+        }
+      }
     }
   }
 

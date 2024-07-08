@@ -4,7 +4,7 @@ import {ShowcaseDescriptionModel} from "~/models/showcase/showcase-description.m
 export interface ShowcaseModel {
     title: string;
     subtitle: string;
-    link?: string;
+    links?: Array<{linkTitle: string, linkUrl: string}>;
     coverImage: string;
     highlights: ShowcaseHighlightModel[];
     highlightIntro: string;

@@ -2,6 +2,11 @@
 title: Majske igre
 subtitle: Prenova spletne strani največjega študentskega dogodka
 link: www.majske-igre.si
+links:
+  - linkTitle: Spletna stran
+    linkUrl: https://majske-igre.si
+  - linkTitle: Izvorna koda
+    linkUrl: https://github.com/JakMar17/MajskeIgre
 coverImage: /img/mi.png.webp
 highlights:
   - highlightTitle: Orodja

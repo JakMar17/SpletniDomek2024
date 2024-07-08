@@ -92,10 +92,19 @@ collections:
         name: "subtitle"
         widget: "string"
         required: true
-      - label: "Povezava"
-        name: "link"
-        widget: "string"
+      - label: "Povezave"
+        name: "links"
+        widget: "list"
         required: false
+        fields:
+          - label: "Naslov povezave"
+            name: "linkTitle"
+            widget: "string"
+            required: true
+          - label: "URL povezave"
+            name: "linkUrl"
+            widget: "string"
+            required: true
       - label: "Naslovna slika"
         name: "coverImage"
         widget: "image"
