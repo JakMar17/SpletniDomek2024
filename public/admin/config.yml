@@ -1,240 +1,211 @@
 local_backend: true
 
 backend:
-    name: git-gateway
-    branch: master
+  name: git-gateway
+  branch: master
 
 media_folder: public/img
 public_folder: /img
 
 collections:
-    - name: 'cv'
-      label: 'Življenjepis'
-      format: 'json'
-      files:
-          - name: 'workExperiences'
-            label: 'Delovne izkušnje'
-            format: 'json'
-            file: 'content/cv/work-experiences.json'
-            create: true
-            slug: '{{slug}}'
+  - name: cv
+    label: Življenjepis
+    format: json
+    files:
+      - name: cvFile
+        label: Življenjepis PDF
+        file: content/cv/cv-file.json
+        fields:
+            - label: Datoteka
+              name: file
+              widget: file
+              media_folder: /public/files
+      - name: workExperiences
+        label: Delovne izkušnje
+        format: json
+        file: content/cv/work-experiences.json
+        create: true
+        slug: '{{slug}}'
+        fields:
+          - label: Entiteta
+            name: entries
+            widget: list
             fields:
-                - label: 'Entiteta'
-                  name: 'entries'
-                  widget: 'list'
-                  fields:
-                      - {
-                            label: 'Podjetje',
-                            name: 'entityName',
-                            widget: 'string',
-                            required: true,
-                        }
-                      - {
-                            label: 'Pozicija',
-                            name: 'position',
-                            widget: 'string',
-                            required: true,
-                        }
-                      - {
-                            label: 'Leta',
-                            name: 'years',
-                            widget: 'string',
-                            required: true,
-                        }
-                      - {
-                            label: 'Opis',
-                            name: 'description',
-                            widget: 'list',
-                            field:
-                                {
-                                    label: 'Paragraph',
-                                    name: 'Paragraph',
-                                    widget: 'text',
-                                },
-                        }
+              - label: Podjetje
+                name: entityName
+                widget: string
+                required: true
+              - label: Pozicija
+                name: position
+                widget: string
+                required: true
+              - label: Leta
+                name: years
+                widget: string
+                required: true
+              - label: Opis
+                name: description
+                widget: list
+                field:
+                  label: Paragraph
+                  name: Paragraph
+                  widget: text
 
-          - name: 'education'
-            label: 'Izobrazba'
-            format: 'json'
-            file: 'content/cv/education.json'
-            create: true
-            slug: '{{slug}}'
+      - name: education
+        label: Izobrazba
+        format: json
+        file: content/cv/education.json
+        create: true
+        slug: '{{slug}}'
+        fields:
+          - label: Entiteta
+            name: entries
+            widget: list
             fields:
-                - label: 'Entiteta'
-                  name: 'entries'
-                  widget: 'list'
-                  fields:
-                      - {
-                            label: 'Ustanova',
-                            name: 'entityName',
-                            widget: 'string',
-                            required: true,
-                        }
-                      - {
-                            label: 'Pozicija',
-                            name: 'position',
-                            widget: 'string',
-                            required: true,
-                        }
-                      - {
-                            label: 'Leta',
-                            name: 'years',
-                            widget: 'string',
-                            required: true,
-                        }
-                      - {
-                            label: 'Opis',
-                            name: 'description',
-                            widget: 'list',
-                            field:
-                                {
-                                    label: 'Paragraph',
-                                    name: 'Paragraph',
-                                    widget: 'text',
-                                },
-                        }
+              - label: Ustanova
+                name: entityName
+                widget: string
+                required: true
+              - label: Pozicija
+                name: position
+                widget: string
+                required: true
+              - label: Leta
+                name: years
+                widget: string
+                required: true
+              - label: Opis
+                name: description
+                widget: list
+                field:
+                  label: Paragraph
+                  name: Paragraph
+                  widget: text
 
-          - name: 'otherHighlights'
-            label: 'Ostali poudarki'
-            format: 'json'
-            file: 'content/cv/other-highlights.json'
-            create: true
-            slug: '{{slug}}'
+      - name: otherHighlights
+        label: Ostali poudarki
+        format: json
+        file: content/cv/other-highlights.json
+        create: true
+        slug: '{{slug}}'
+        fields:
+          - label: Entiteta
+            name: entries
+            widget: list
             fields:
-                - label: 'Entiteta'
-                  name: 'entries'
-                  widget: 'list'
-                  fields:
-                      - {
-                            label: 'Poudarek',
-                            name: 'entityName',
-                            widget: 'string',
-                            required: true,
-                        }
-                      - {
-                            label: 'Naslov',
-                            name: 'position',
-                            widget: 'string',
-                            required: true,
-                        }
-                      - {
-                            label: 'Leta',
-                            name: 'years',
-                            widget: 'string',
-                            required: true,
-                        }
-                      - {
-                            label: 'Opis',
-                            name: 'description',
-                            widget: 'list',
-                            field:
-                                {
-                                    label: 'Paragraph',
-                                    name: 'Paragraph',
-                                    widget: 'text',
-                                },
-                        }
+              - label: Poudarek
+                name: entityName
+                widget: string
+                required: true
+              - label: Naslov
+                name: position
+                widget: string
+                required: true
+              - label: Leta
+                name: years
+                widget: string
+                required: true
+              - label: Opis
+                name: description
+                widget: list
+                field:
+                  label: Paragraph
+                  name: Paragraph
+                  widget: text
 
-    - name: 'me'
-      label: 'O meni'
-      format: 'json'
-      files:
-          - name: 'highlightedTools'
-            label: 'Najpogosteje uporabljena orodja'
-            format: 'json'
-            file: 'content/cv/highlighted-tools.json'
-            create: true
-            slug: '{{slug}}'
+
+  - name: me
+    label: O meni
+    format: json
+    files:
+      - name: highlightedTools
+        label: Najpogosteje uporabljena orodja
+        format: json
+        file: content/cv/highlighted-tools.json
+        create: true
+        slug: '{{slug}}'
+        fields:
+          - label: Entiteta
+            name: entries
+            widget: list
             fields:
-                - label: 'Entiteta'
-                  name: 'entries'
-                  widget: 'list'
-                  fields:
-                      - {
-                            label: 'Ime orodja',
-                            name: 'title',
-                            widget: 'string',
-                            required: true,
-                        }
-                      - {
-                            label: 'Opis',
-                            name: 'description',
-                            widget: 'string',
-                            required: true,
-                        }
-                      - {
-                            label: 'Ikona',
-                            name: 'icon',
-                            widget: 'string',
-                            required: true,
-                        }
+              - label: Ime orodja
+                name: title
+                widget: string
+                required: true
+              - label: Opis
+                name: description
+                widget: string
+                required: true
+              - label: Ikona
+                name: icon
+                widget: string
+                required: true
 
-    - name: 'showcases'
-      label: 'Projekti'
-      folder: 'content/showcases'
-      create: true
-      fields:
-          - label: 'Naslov'
-            name: 'title'
-            widget: 'string'
+  - name: showcases
+    label: Projekti
+    folder: content/showcases
+    create: true
+    fields:
+      - label: Naslov
+        name: title
+        widget: string
+        required: true
+      - label: Podnaslov
+        name: subtitle
+        widget: string
+        required: true
+      - label: Povezave
+        name: links
+        widget: list
+        required: false
+        fields:
+          - label: Naslov povezave
+            name: linkTitle
+            widget: string
             required: true
-          - label: 'Podnaslov'
-            name: 'subtitle'
-            widget: 'string'
+          - label: URL povezave
+            name: linkUrl
+            widget: string
             required: true
-          - label: 'Povezave'
-            name: 'links'
-            widget: 'list'
-            required: false
-            fields:
-                - label: 'Naslov povezave'
-                  name: 'linkTitle'
-                  widget: 'string'
-                  required: true
-                - label: 'URL povezave'
-                  name: 'linkUrl'
-                  widget: 'string'
-                  required: true
-          - label: 'Naslovna slika'
-            name: 'coverImage'
-            widget: 'image'
-          - label: 'Poudarki'
-            name: 'highlights'
-            widget: 'list'
-            required: false
-            fields:
-                - label: 'Naslov poudarka'
-                  name: 'highlightTitle'
-                  widget: 'string'
-                  required: true
-                - label: 'Podatki poudarka'
-                  name: 'highlightData'
-                  widget: 'list'
-                  required: true
-                  field:
-                      {
-                          label: 'Podatek',
-                          name: 'highlightDataItem',
-                          widget: 'string',
-                          required: true,
-                      }
-          - label: 'Uvodnik'
-            name: 'highlightIntro'
-            widget: 'markdown'
+      - label: Naslovna slika
+        name: coverImage
+        widget: image
+      - label: Poudarki
+        name: highlights
+        widget: list
+        required: false
+        fields:
+          - label: Naslov poudarka
+            name: highlightTitle
+            widget: string
             required: true
-          - label: 'Poglavja opisa'
-            name: 'descriptions'
-            widget: 'list'
-            required: false
-            fields:
-                - label: 'Nadnaslov'
-                  name: 'superTitle'
-                  widget: 'string'
-                - label: 'Naslov'
-                  name: 'title'
-                  widget: 'string'
-                  required: true
-                - label: 'Vsebina'
-                  name: 'content'
-                  widget: 'markdown'
-                  required: true
+          - label: Podatki poudarka
+            name: highlightData
+            widget: list
+            required: true
+            field:
+              label: Podatek
+              name: highlightDataItem
+              widget: string
+              required: true
+      - label: Uvodnik
+        name: highlightIntro
+        widget: markdown
+        required: true
+      - label: Poglavja opisa
+        name: descriptions
+        widget: list
+        required: false
+        fields:
+          - label: Nadnaslov
+            name: superTitle
+            widget: string
+          - label: Naslov
+            name: title
+            widget: string
+            required: true
+          - label: Vsebina
+            name: content
+            widget: markdown
+            required: true
