@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <div class="header__wrapper is-flex is-justify-content-space-between is-align-items-center">
+    <div class="header__wrapper is-flex is-justify-content-space-between is-align-items-center is-flex-wrap-wrap">
       <h1 class="header-h1">Življenjepis</h1>
       <NuxtLink v-if="cvFileUrl" :to="cvFileUrl" class="button is-dark is-rounded" target="_blank">
         <span>Prenesi CV</span>
