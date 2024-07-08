@@ -15,7 +15,7 @@
         <img :src="showcase?.coverImage" loading="lazy" alt="Slika kontesta"/>
       </div>
 
-      <div class="is-flex is-justify-content-space-between is-flex-wrap-wrap">
+      <div class="is-flex is-justify-content-space-between is-flex-wrap-wrap" data-aos="fade-in-up">
         <div class="intro__highlights">
 
           <div v-for="h of showcase?.highlights" :key="h.highlightTitle" class="intro__highlight">
@@ -32,7 +32,7 @@
       </div>
     </div>
 
-    <div v-for="paragraph of paragraphsParsed" :key="paragraph.title" class="description">
+    <div v-for="paragraph of paragraphsParsed" :key="paragraph.title" class="description" data-aos="fade-in-up">
       <div class="description__supertitle">{{ paragraph.superTitle }}</div>
       <h3 class="header-h2">{{ paragraph.title }}</h3>
       <div v-if="paragraph.content != null" class="content">

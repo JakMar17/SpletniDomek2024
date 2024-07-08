@@ -4,12 +4,12 @@
       <h1 class="header-h1">Moja zgodba</h1>
     </div>
 
-      <div class="about-me__wrapper">
+    <div class="about-me__wrapper" data-aos="fade-in-up">
 
 
-        <div class="about-me__img-wrapper">
-          <img class="about-me__img" src="../assets/images/me-2.jpg.webp" loading="lazy" alt="Portret avtorja strani - Jakoba"/>
-        </div>
+      <div class="about-me__img-wrapper">
+        <img class="about-me__img" src="../assets/images/me-2.jpg.webp" loading="lazy" alt="Portret avtorja strani - Jakoba"/>
+      </div>
 
 
         <div class="about-me__description">
@@ -32,10 +32,11 @@
         </div>
       </div>
 
-    <h2 class="header-h2" style="margin-top: 4rem; margin-bottom: 2rem">Najpogosteje uporabljena orodja</h2>
-
-    <div class="is-flex is-justify-content-space-between is-flex-wrap-wrap">
-      <CardTechnologyComponent v-for="h of highlightedTools" :key="h.icon" v-bind="h"/>
+    <div data-aos="fade-in-up">
+      <h2 class="header-h2" style="margin-top: 4rem; margin-bottom: 2rem">Najpogosteje uporabljena orodja</h2>
+      <div class="is-flex is-justify-content-space-between is-flex-wrap-wrap">
+        <CardTechnologyComponent v-for="h of highlightedTools" :key="h.icon" v-bind="h"/>
+      </div>
     </div>
 
   </div>
@@ -87,13 +88,13 @@ useServerSeoMeta(createSeoObject({title: 'Kdo je Jakob?', image: '/images/me.jpg
       display: flex;
       justify-content: center;
       border-radius: 8px;
-        width: 100%;
+      width: 100%;
       margin-bottom: 3rem;
 
 
       @media screen and (min-width: 768px) {
-      margin-bottom: unset;
-      width: 30%;
+        margin-bottom: unset;
+        width: 30%;
       }
     }
   }

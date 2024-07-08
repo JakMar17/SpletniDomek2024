@@ -7,7 +7,7 @@
 
 
     <div class="grid">
-      <NuxtLink to="/jaz" id="aboutMe" class="grid__tile">
+      <NuxtLink to="/jaz" id="aboutMe" class="grid__tile" data-aos="fade-in-up">
         <div class="img__wrapper">
           <img src="../assets/images/me-sm.jpg.webp" alt="Portret avtorja strani - Jakoba"/>
         </div>
@@ -17,7 +17,7 @@
         </div>
       </NuxtLink>
 
-      <a href="https://majske-igre.si" target="_blank" class="div2 grid__tile is-flex is-justify-content-space-between pl-6 pt-6 is-flex-wrap-wrap" style="height: 20em; overflow: hidden">
+      <NuxtLink to="/showcase/majske-igre" class="div2 grid__tile is-flex is-justify-content-space-between pl-6 pt-6 is-flex-wrap-wrap" style="height: 20em; overflow: hidden" data-aos="fade-in-up">
         <div style="width: 40%">
           <h3 class="title tile__title">Majske igre</h3>
           <div class="title tile__subtitle">uradna spletna stran največjega študentskega festivala</div>
@@ -25,9 +25,9 @@
         <div class="is-flex is-justify-content-flex-end" style="margin-top: 2rem">
           <img style="max-height: 20em; object-fit: cover" src="../assets/images/showcase/mi.png.webp" alt="Zaslonski posnetek spletne strani Majske igre"/>
         </div>
-      </a>
+      </NuxtLink>
 
-      <a href="https://majca-za-kras.vercel.app/" target="_blank" class="div3 grid__tile is-flex is-justify-content-space-between pl-6 pt-6 is-flex-wrap-wrap" style="height: 20em; overflow: hidden">
+      <a href="https://majca-za-kras.vercel.app/" target="_blank" class="div3 grid__tile is-flex is-justify-content-space-between pl-6 pt-6 is-flex-wrap-wrap" style="height: 20em; overflow: hidden" data-aos="fade-in-up">
         <div style="width: 80%">
           <h3 class="title tile__title">Majca za Kras</h3>
           <div class="title tile__subtitle">idejni vodja dobrodelne majice po največjem požaru v zgodovini Slovenije</div>
@@ -38,7 +38,7 @@
       </a>
 
 
-      <NuxtLink to="/showcase/jakobov-spletni-domek" class="div4 grid__tile is-flex is-justify-content-space-between pl-6 pt-6 is-flex-wrap-wrap" style="height: 20em; overflow: hidden; background: #ac1d18">
+      <NuxtLink to="/showcase/jakobov-spletni-domek" class="div4 grid__tile is-flex is-justify-content-space-between pl-6 pt-6 is-flex-wrap-wrap" style="height: 20em; overflow: hidden; background: #ac1d18" data-aos="fade-in-up">
         <div style="width: 80%">
           <h3 class="title tile__title has-text-white">Jakobov spletni domek</h3>
           <div class="title tile__subtitle has-text-white">po inspiraciji minimalističnega Mondrianovega platna</div>
@@ -48,7 +48,7 @@
         </div>
       </NuxtLink>
 
-      <a href="https://ssvets.si" target="_blank" class="div5 grid__tile is-flex is-justify-content-space-between pl-6 pt-6 is-flex-wrap-wrap" style="height: 20em; overflow: hidden">
+      <a href="https://ssvets.si" target="_blank" class="div5 grid__tile is-flex is-justify-content-space-between pl-6 pt-6 is-flex-wrap-wrap" style="height: 20em; overflow: hidden" data-aos="fade-in-up">
         <div style="width: 80%">
           <h3 class="title tile__title">Študentski svet stanovalcev</h3>
           <div class="title tile__subtitle">spletna stran Študentskega sveta stanovalcev ŠDL</div>
@@ -58,7 +58,7 @@
         </div>
       </a>
 
-      <a href="https://github.com/MarelaTeam-s-Majske-Igre/MajskeIgre" target="_blank" class="div6 grid__tile is-flex is-justify-content-space-between is-flex-direction-column pl-6 pt-6">
+      <a href="https://github.com/MarelaTeam-s-Majske-Igre/MajskeIgre" target="_blank" class="div6 grid__tile is-flex is-justify-content-space-between is-flex-direction-column pl-6 pt-6" data-aos="fade-in-up">
         <h3 class="title tile__title">Majske igre 2022</h3>
         <div class="title tile__subtitle">mobilna aplikacija Majskih iger 2022 za Android naprave</div>
         <div class="is-flex is-justify-content-flex-end">

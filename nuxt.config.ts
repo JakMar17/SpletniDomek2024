@@ -32,7 +32,7 @@ export default defineNuxtConfig({
     },
     plugins: [
     ],
-    modules: ['@nuxt/content', 'v-plausible', ["@nuxtjs/google-fonts", {
+    modules: ['@nuxt/content', 'v-plausible', 'nuxt-aos', ["@nuxtjs/google-fonts", {
         families: {
             'Noto Sans JP': [800],
             'Inter Tight': {
