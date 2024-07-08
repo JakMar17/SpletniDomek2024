@@ -1,45 +1,45 @@
 {
-  "name": "jakobov-spletni-domek",
-  "version": "0.1.0",
-  "private": true,
-  "author": {
-    "name": "Jakob Marušič",
-    "company": "MarelaTeam"
-  },
-  "scripts": {
-    "build": "nuxt build",
-    "dev": "nuxt dev",
-    "generate": "nuxt generate",
-    "preview": "nuxt preview",
-    "postinstall": "nuxt prepare",
-    "lint:prettier:fix": "yarn prettier:fix && yarn lint:eslint",
-    "lint:eslint": "eslint .",
-    "prettier": "prettier . --check",
-    "prettier:fix": "prettier --write --list-different ."
-  },
-  "engines": {
-    "node": ">=16.0.0"
-  },
-  "devDependencies": {
-    "@nuxt/content": "^2.7.0",
-    "@nuxt/eslint": "^0.3.13",
-    "@nuxtjs/google-fonts": "^3.2.0",
-    "eslint": "^9.6.0",
-    "eslint-config-prettier": "^9.1.0",
-    "eslint-plugin-prettier": "^5.1.3",
-    "nuxt": "^3.6.2",
-    "nuxt-aos": "^1.2.4",
-    "prettier": "^3.3.2",
-    "typescript": "^5.5.3"
-  },
-  "dependencies": {
-    "@mdi/font": "^7.1.96",
-    "@nuxt/content": "^2.7.0",
-    "@nuxtjs/markdownit": "^2.0.0",
-    "bulma": "^0.9.4",
-    "remixicon": "^3.0.0",
-    "sass": "^1.58.0",
-    "v-plausible": "^1.2.0"
-  },
-  "license": "MIT"
+    "name": "jakobov-spletni-domek",
+    "version": "0.1.0",
+    "private": true,
+    "author": {
+        "name": "Jakob Marušič",
+        "company": "MarelaTeam"
+    },
+    "scripts": {
+        "build": "nuxt build",
+        "dev": "nuxt dev",
+        "generate": "nuxt generate",
+        "preview": "nuxt preview",
+        "postinstall": "nuxt prepare",
+        "lint:prettier:fix": "yarn prettier:fix && yarn lint:eslint",
+        "lint:eslint": "eslint .",
+        "prettier": "prettier . --check",
+        "prettier:fix": "prettier --write --list-different ."
+    },
+    "engines": {
+        "node": ">=16.0.0"
+    },
+    "devDependencies": {
+        "@nuxt/content": "^2.7.0",
+        "@nuxt/eslint": "^0.3.13",
+        "@nuxtjs/google-fonts": "^3.2.0",
+        "eslint": "^9.6.0",
+        "eslint-config-prettier": "^9.1.0",
+        "eslint-plugin-prettier": "^5.1.3",
+        "nuxt": "^3.6.2",
+        "nuxt-aos": "^1.2.4",
+        "prettier": "^3.3.2",
+        "typescript": "^5.5.3"
+    },
+    "dependencies": {
+        "@mdi/font": "^7.1.96",
+        "@nuxt/content": "^2.7.0",
+        "@nuxtjs/markdownit": "^2.0.0",
+        "bulma": "^0.9.4",
+        "remixicon": "^3.0.0",
+        "sass": "^1.58.0",
+        "v-plausible": "^1.2.0"
+    },
+    "license": "MIT"
 }

@@ -57,6 +57,7 @@ Check out the [deployment documentation](https://nuxt.com/docs/getting-started/d
 Reach out to me on [ugur@burakturkis.com](mailto:ugur@burakturkis.com)
 
 ## Buy me a coffee
+
 [![Buy me a Coffee](https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png)](https://www.buymeacoffee.com/burakturkis)
 
-*** Happy Coding ***
+**_ Happy Coding _**

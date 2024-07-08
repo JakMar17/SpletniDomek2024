@@ -1,22 +1,22 @@
 {
-  "entries": [
-    {
-      "entityName": "Lokalna politika",
-      "position": "Delovanje v občinskem svetu Občine Miren-Kostanjevica in krajevni skupnosti",
-      "years": "2022 - danes",
-      "description": [
-        "V letu 2022 sem bil izvoljen za člana občinskega sveta Občine Miren-Kostanjevica in člana Krajevne skupnosti Opatje selo kot neodvisni kandidat. ",
-        "V svojem delovanju se osredotočam na status mladih v občini - prevzel sem novoustanovljen Odbor za mladino. Na podlagi dela odbora je občinski svet v letu 2024 sprejel prvo občinsko mladinsko strategijo, katere soavtor sem. "
-      ]
-    },
-    {
-      "entityName": "Študentski svet stanovalcev",
-      "position": "Namestnik predsednika ŠSS Študentskega doma Ljubljana",
-      "years": "2021 - danes",
-      "description": [
-        "Od leta 2021 sem aktiven v študentskem svetu stanovalcev Študentskega doma Ljubljana, ki združuje 7500 študentov. V letu 2022 sem poleg članstva prevzel vodenje delovne skupine, ki je reševala socialne, bivanjske in druge aktualne problematike stanovalcev.",
-        "V letu 2023 sem prevzel funkcijo namestnika predsednika ŠSS."
-      ]
-    }
-  ]
+    "entries": [
+        {
+            "entityName": "Lokalna politika",
+            "position": "Delovanje v občinskem svetu Občine Miren-Kostanjevica in krajevni skupnosti",
+            "years": "2022 - danes",
+            "description": [
+                "V letu 2022 sem bil izvoljen za člana občinskega sveta Občine Miren-Kostanjevica in člana Krajevne skupnosti Opatje selo kot neodvisni kandidat. ",
+                "V svojem delovanju se osredotočam na status mladih v občini - prevzel sem novoustanovljen Odbor za mladino. Na podlagi dela odbora je občinski svet v letu 2024 sprejel prvo občinsko mladinsko strategijo, katere soavtor sem. "
+            ]
+        },
+        {
+            "entityName": "Študentski svet stanovalcev",
+            "position": "Namestnik predsednika ŠSS Študentskega doma Ljubljana",
+            "years": "2021 - danes",
+            "description": [
+                "Od leta 2021 sem aktiven v študentskem svetu stanovalcev Študentskega doma Ljubljana, ki združuje 7500 študentov. V letu 2022 sem poleg članstva prevzel vodenje delovne skupine, ki je reševala socialne, bivanjske in druge aktualne problematike stanovalcev.",
+                "V letu 2023 sem prevzel funkcijo namestnika predsednika ŠSS."
+            ]
+        }
+    ]
 }

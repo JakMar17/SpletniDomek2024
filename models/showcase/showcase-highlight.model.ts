@@ -1,4 +1,4 @@
 export interface ShowcaseHighlightModel {
-    highlightTitle: string;
-    highlightData: Array<string>;
+    highlightTitle: string
+    highlightData: Array<string>
 }
