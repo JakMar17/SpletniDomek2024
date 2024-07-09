@@ -168,6 +168,20 @@ collections:
             name: linkUrl
             widget: string
             required: true
+      - label: Priloge
+        name: attachments
+        widget: list
+        required: false
+        fields:
+          - label: Naslov priloge
+            name: attachmentTitle
+            widget: string
+            required: true
+          - label: Datoteka priloge
+            name: attachmentFile
+            widget: file
+            media_folder: /public/files/showcase
+            required: true
       - label: Naslovna slika
         name: coverImage
         widget: image

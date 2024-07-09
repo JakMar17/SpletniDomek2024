@@ -5,6 +5,7 @@ export interface ShowcaseModel {
     title: string
     subtitle: string
     links?: Array<{ linkTitle: string; linkUrl: string }>
+    attachments?: Array<{ attachmentTitle: string; attachmentFile: string }>
     coverImage: string
     highlights: ShowcaseHighlightModel[]
     highlightIntro: string
