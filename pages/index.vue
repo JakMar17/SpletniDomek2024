@@ -56,9 +56,8 @@
                 </div>
             </NuxtLink>
 
-            <a
-                href="https://majca-za-kras.vercel.app/"
-                target="_blank"
+            <NuxtLink
+                to="/showcase/majca-za-kras"
                 class="div3 grid__tile is-flex is-justify-content-space-between pl-6 pt-6 is-flex-wrap-wrap"
                 style="height: 20em; overflow: hidden"
                 data-aos="fade-in-up"
@@ -81,7 +80,7 @@
                         alt="Majca za Kras"
                     />
                 </div>
-            </a>
+            </NuxtLink>
 
             <NuxtLink
                 to="/showcase/jakobov-spletni-domek"
