@@ -10,7 +10,6 @@
                 id="aboutMe"
                 to="/jaz"
                 class="grid__tile"
-                data-aos="fade-in-up"
             >
                 <div class="img__wrapper">
                     <img
@@ -36,7 +35,7 @@
                 to="/showcase/majske-igre"
                 class="div2 grid__tile is-flex is-justify-content-space-between pl-6 pt-6 is-flex-wrap-wrap"
                 style="height: 20em; overflow: hidden"
-                data-aos="fade-in-up"
+                
             >
                 <div style="width: 40%">
                     <h3 class="title tile__title">Majske igre</h3>
@@ -60,7 +59,7 @@
                 to="/showcase/majca-za-kras"
                 class="div3 grid__tile is-flex is-justify-content-space-between pl-6 pt-6 is-flex-wrap-wrap"
                 style="height: 20em; overflow: hidden"
-                data-aos="fade-in-up"
+                
             >
                 <div style="width: 80%">
                     <h3 class="title tile__title">Majca za Kras</h3>
@@ -86,7 +85,7 @@
                 to="/showcase/jakobov-spletni-domek"
                 class="div4 grid__tile is-flex is-justify-content-space-between pl-6 pt-6 is-flex-wrap-wrap"
                 style="height: 20em; overflow: hidden; background: #ac1d18"
-                data-aos="fade-in-up"
+                
             >
                 <div style="width: 80%">
                     <h3 class="title tile__title has-text-white">
@@ -114,7 +113,7 @@
                 target="_blank"
                 class="div5 grid__tile is-flex is-justify-content-space-between pl-6 pt-6 is-flex-wrap-wrap"
                 style="height: 20em; overflow: hidden"
-                data-aos="fade-in-up"
+                
             >
                 <div style="width: 80%">
                     <h3 class="title tile__title">
@@ -141,7 +140,7 @@
                 href="https://github.com/MarelaTeam-s-Majske-Igre/MajskeIgre"
                 target="_blank"
                 class="div6 grid__tile is-flex is-justify-content-space-between is-flex-direction-column pl-6 pt-6"
-                data-aos="fade-in-up"
+                
             >
                 <h3 class="title tile__title">Majske igre 2022</h3>
                 <div class="title tile__subtitle">
@@ -225,7 +224,7 @@ useServerSeoMeta(
 
             -webkit-box-shadow: $box-shadow;
             -moz-box-shadow: $box-shadow;
-            box-shadow: $box-shadow;
+            box-shadow: $box-shadow, -10px -10px 10px 2px white;
         }
 
         @media screen and (min-width: 1024px) {
