@@ -1,57 +1,57 @@
 {
-  "entries": [
-    {
-      "entityName": "Majske igre",
-      "position": "Namestnik vodje prireditve in vodja trženja",
-      "years": "2024",
-      "description": [
-        "Pomoč pri vodenju 13-članske organizacijske ekipe projekta  v vrednosti 200.000€ in letnim obiskom med 30.000 in 40.000 obiskovalcev. Pri vodenju ekipe sem koordiniral različne sektorje (tehnični, gostinski,...) in skrbel za komunikacijo in pogajanja s sponzorji in partnerji.",
-        "Zasnova celostne in trajnostne strategije odnosov s sponzorji je pripomogla k pridobitvi novih dolgoročnih sponzorjev in pridobitev novih sponzorjev v vrednosti 40% skupnih sponzorskih sredstev."
-      ]
-    },
-    {
-      "entityName": "Medius d.o.o.",
-      "position": "Frontend razvijalec",
-      "years": "2022 - danes",
-      "description": [
-        "Razvoj Angular poslovnih aplikacij po meri za naročnike Loterijo Slovenije, Telekom Slovenije, VSRS in druge. Celostni razvoj z razvojem uporabniškega vmesnika, uporabniške izkušnje in poslovne logike. Koordinacija preostalih frontend razvijalcev in koordinacija sočasnega razvoja zalednih in čelnih delov sistema.\n",
-        "Razvoj in-house prilagojenega ogrodja za hiter razvoj uporabniških vmesnikov."
-      ]
-    },
-    {
-      "entityName": "Omega Consult d.o.o.",
-      "position": "Razvijalec poslovnih sistemov",
-      "years": "2020 - 2021",
-      "description": [
-        "Fullstack razvijalec poslovnih sistemov po meri. Razvoj podatkovnih skript za podatkovno bazo Oracle, zalednih sistemov Java in SpringBoot in čelnih sistemov v ogrodju Angular."
-      ]
-    },
-    {
-      "entityName": "Varni na internetu",
-      "position": "Razvijalec iSure ŠIPK projekta",
-      "years": "2020",
-      "description": [
-        "Sodelovanje na projektu iSure ŠIPK v sodelovanju s Fakulteto za računalništvo in informatiko in zavodom Varni na internetu kot glavni razvijalec in pripravljavec tečajev za uporabo mikrokontrolerjev. ",
-        "Namen projekta je bila postavitev platforme osnovane na Moodlu za množičen interaktiven tečaj namenjen osnovno in srednješolcem, ki se želijo spoznati z orodji in uporabno vrednostjo mikrokontrolerjev."
-      ]
-    },
-    {
-      "entityName": "Mahle d.o.o.",
-      "position": "Razvijalec poslovne informatike",
-      "years": "2021 in 2019",
-      "description": [
-        "Razvoj in nadgradnja poslovne informatike v okviru poletne prakse.",
-        "Razvoj intraneta podjetja z uporabo baznih skript Oracle ter programskih jezikov Java in HTML/CSS/Javascript."
-      ]
-    },
-    {
-      "entityName": "Špacapanova hiša d.o.o.",
-      "position": "Vodja odnosov z javnostjo",
-      "years": "2018 - 2023",
-      "description": [
-        "Vodja in upravljalec spletne strani podjetja, socialnih omrežij in celostne spletne podobe podjetja, ki je danes nosilec Michellinove zelene zvezdice.",
-        "Celostna zasnova spletne podobe podjetja in razvoj strategije predstavitve temeljenje dejavnosti."
-      ]
-    }
-  ]
+    "entries": [
+        {
+            "entityName": "Majske igre",
+            "position": "Namestnik vodje prireditve in vodja trženja",
+            "years": "2024",
+            "description": [
+                "Pomoč pri vodenju 13-članske organizacijske ekipe projekta  v vrednosti 200.000€ in letnim obiskom med 30.000 in 40.000 obiskovalcev. Pri vodenju ekipe sem koordiniral različne sektorje (tehnični, gostinski,...) in skrbel za komunikacijo in pogajanja s sponzorji in partnerji.",
+                "Zasnova celostne in trajnostne strategije odnosov s sponzorji je pripomogla k pridobitvi novih dolgoročnih sponzorjev in pridobitev novih sponzorjev v vrednosti 40% skupnih sponzorskih sredstev."
+            ]
+        },
+        {
+            "entityName": "Medius d.o.o.",
+            "position": "Frontend razvijalec",
+            "years": "2022 - danes",
+            "description": [
+                "Razvoj Angular poslovnih aplikacij po meri za naročnike Loterijo Slovenije, Telekom Slovenije, VSRS in druge. Celostni razvoj z razvojem uporabniškega vmesnika, uporabniške izkušnje in poslovne logike. Koordinacija preostalih frontend razvijalcev in koordinacija sočasnega razvoja zalednih in čelnih delov sistema.\n",
+                "Razvoj in-house prilagojenega ogrodja za hiter razvoj uporabniških vmesnikov."
+            ]
+        },
+        {
+            "entityName": "Omega Consult d.o.o.",
+            "position": "Razvijalec poslovnih sistemov",
+            "years": "2020 - 2021",
+            "description": [
+                "Fullstack razvijalec poslovnih sistemov po meri. Razvoj podatkovnih skript za podatkovno bazo Oracle, zalednih sistemov Java in SpringBoot in čelnih sistemov v ogrodju Angular."
+            ]
+        },
+        {
+            "entityName": "Varni na internetu",
+            "position": "Razvijalec iSure ŠIPK projekta",
+            "years": "2020",
+            "description": [
+                "Sodelovanje na projektu iSure ŠIPK v sodelovanju s Fakulteto za računalništvo in informatiko in zavodom Varni na internetu kot glavni razvijalec in pripravljavec tečajev za uporabo mikrokontrolerjev. ",
+                "Namen projekta je bila postavitev platforme osnovane na Moodlu za množičen interaktiven tečaj namenjen osnovno in srednješolcem, ki se želijo spoznati z orodji in uporabno vrednostjo mikrokontrolerjev."
+            ]
+        },
+        {
+            "entityName": "Mahle d.o.o.",
+            "position": "Razvijalec poslovne informatike",
+            "years": "2021 in 2019",
+            "description": [
+                "Razvoj in nadgradnja poslovne informatike v okviru poletne prakse.",
+                "Razvoj intraneta podjetja z uporabo baznih skript Oracle ter programskih jezikov Java in HTML/CSS/Javascript."
+            ]
+        },
+        {
+            "entityName": "Špacapanova hiša d.o.o.",
+            "position": "Vodja odnosov z javnostjo",
+            "years": "2018 - 2023",
+            "description": [
+                "Vodja in upravljalec spletne strani podjetja, socialnih omrežij in celostne spletne podobe podjetja, ki je danes nosilec Michellinove zelene zvezdice.",
+                "Celostna zasnova spletne podobe podjetja in razvoj strategije predstavitve temeljenje dejavnosti."
+            ]
+        }
+    ]
 }

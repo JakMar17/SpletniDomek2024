@@ -38,23 +38,25 @@
                             </div>
                         </div>
                     </div>
-                  <div
-                      v-if="(attachments?.length ?? 0) > 0"
-                      class="intro__highlight"
-                  >
-                    <h3 class="header-h3 pb-0">Priloge</h3>
-                    <div class="intro__highlight__content">
-                      <div
-                          v-for="attachment of attachments"
-                          :key="attachment.attachmentTitle"
-                          class="link"
-                      >
-                        <NuxtLink :href="attachment.attachmentFile" target="_blank">{{
-                            attachment.attachmentTitle
-                          }}</NuxtLink>
-                      </div>
+                    <div
+                        v-if="(attachments?.length ?? 0) > 0"
+                        class="intro__highlight"
+                    >
+                        <h3 class="header-h3 pb-0">Priloge</h3>
+                        <div class="intro__highlight__content">
+                            <div
+                                v-for="attachment of attachments"
+                                :key="attachment.attachmentTitle"
+                                class="link"
+                            >
+                                <NuxtLink
+                                    :href="attachment.attachmentFile"
+                                    target="_blank"
+                                    >{{ attachment.attachmentTitle }}</NuxtLink
+                                >
+                            </div>
+                        </div>
                     </div>
-                  </div>
                     <div
                         v-for="h of showcase?.highlights"
                         :key="h.highlightTitle"
@@ -108,7 +110,9 @@ const route = useRoute()
 const showcase = ref<ShowcaseModel | null>(null)
 const introParsed = ref<string | null>(null)
 const paragraphsParsed = ref<ShowcaseDescriptionModel[]>([])
-const attachments = ref<{attachmentTitle: string, attachmentFile: string}[] | null>(null)
+const attachments = ref<
+    { attachmentTitle: string; attachmentFile: string }[] | null
+>(null)
 
 useAsyncData('fetchShowcase', () =>
     queryContent(`showcases/${route.params.slug}`).findOne()
@@ -118,10 +122,12 @@ useAsyncData('fetchShowcase', () =>
         (parsed: string) => (introParsed.value = parsed)
     )
 
-    attachments.value = data.value?.attachments?.map(({attachmentTitle, attachmentFile}) => ({
-      attachmentTitle,
-      attachmentFile: attachmentFile.replace('/public', '')
-    }))
+    attachments.value = data.value?.attachments?.map(
+        ({ attachmentTitle, attachmentFile }) => ({
+            attachmentTitle,
+            attachmentFile: attachmentFile.replace('/public', ''),
+        })
+    )
 
     useServerSeoMeta(
         createSeoObject({
