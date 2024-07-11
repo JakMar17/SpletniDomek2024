@@ -100,18 +100,16 @@
                 </div>
             </NuxtLink>
 
-            <a
-                href="https://ssvets.si"
-                target="_blank"
+            <NuxtLink
+                to="/showcase/majca-za-kras"
                 class="div5 grid__tile is-flex is-justify-content-space-between pl-6 pt-6 is-flex-wrap-wrap"
                 style="height: 20em; overflow: hidden"
             >
-                <div style="width: 80%">
-                    <h3 class="title tile__title">
-                        Študentski svet stanovalcev
-                    </h3>
+                <div class="title__wrapper">
+                    <h3 class="title tile__title">Majca za Kras</h3>
                     <div class="title tile__subtitle">
-                        spletna stran Študentskega sveta stanovalcev ŠDL
+                        idejni vodja dobrodelne majice po največjem požaru v
+                        zgodovini Slovenije
                     </div>
                 </div>
                 <div
@@ -120,34 +118,83 @@
                 >
                     <img
                         style="max-height: 20em; object-fit: cover"
-                        src="../assets/images/showcase/sss.png.webp"
+                        src="../assets/images/showcase/majca_za_kras.png.webp"
                         loading="lazy"
                         alt="Zaslonski posnetek spletne strani"
                     />
                 </div>
-            </a>
+            </NuxtLink>
 
             <NuxtLink
-                to="/showcase/majca-za-kras"
-                class="div6 grid__tile is-flex is-justify-content-space-around is-flex-direction-column pl-6 pt-6"
+                to="/showcase/odlasanje-kot-neplacano-delo"
+                class="div6 grid__tile is-flex is-justify-content-space-between is-flex-direction-column pl-6 pt-6"
             >
                 <div>
-                    <h3 class="title tile__title">Majca za Kras</h3>
+                    <h3 class="title tile__title">Odlašanje</h3>
                     <div class="title tile__subtitle">
-                        idejni vodja dobrodelne majice po največjem požaru v
-                        zgodovini Slovenije
+                        kot neplačano delo - civilnodružbeni projekt za
+                        ozaveščanje
                     </div>
                 </div>
 
-                <div class="is-flex is-justify-content-flex-end">
+                <div class="is-flex is-justify-content-flex-end mr-4 mb-4">
                     <img
                         style="max-height: 30em; object-fit: cover"
-                        src="../assets/images/showcase/majca_za_kras.png.webp"
+                        src="../assets/images/showcase/showcase-odlasanje.png"
                         loading="lazy"
-                        alt="Majca za Kras"
+                        alt="Odlašanje kot neplačano delo"
                     />
                 </div>
             </NuxtLink>
+
+            <!--            <NuxtLink-->
+            <!--                to="/showcase/majca-za-kras"-->
+            <!--                class="div6 grid__tile is-flex is-justify-content-space-around is-flex-direction-column pl-6 pt-6"-->
+            <!--            >-->
+            <!--                <div>-->
+            <!--                    <h3 class="title tile__title">Majca za Kras</h3>-->
+            <!--                    <div class="title tile__subtitle">-->
+            <!--                        idejni vodja dobrodelne majice po največjem požaru v-->
+            <!--                        zgodovini Slovenije-->
+            <!--                    </div>-->
+            <!--                </div>-->
+
+            <!--                <div class="is-flex is-justify-content-flex-end">-->
+            <!--                    <img-->
+            <!--                        style="max-height: 30em; object-fit: cover"-->
+            <!--                        src="../assets/images/showcase/majca_za_kras.png.webp"-->
+            <!--                        loading="lazy"-->
+            <!--                        alt="Majca za Kras"-->
+            <!--                    />-->
+            <!--                </div>-->
+            <!--            </NuxtLink>-->
+
+            <!--            <a-->
+            <!--                href="https://ssvets.si"-->
+            <!--                target="_blank"-->
+            <!--                class="div5 grid__tile is-flex is-justify-content-space-between pl-6 pt-6 is-flex-wrap-wrap"-->
+            <!--                style="height: 20em; overflow: hidden"-->
+            <!--            >-->
+            <!--                <div style="width: 80%">-->
+            <!--                    <h3 class="title tile__title">-->
+            <!--                        Študentski svet stanovalcev-->
+            <!--                    </h3>-->
+            <!--                    <div class="title tile__subtitle">-->
+            <!--                        spletna stran Študentskega sveta stanovalcev ŠDL-->
+            <!--                    </div>-->
+            <!--                </div>-->
+            <!--                <div-->
+            <!--                    class="is-flex is-justify-content-flex-end"-->
+            <!--                    style="margin-top: 2rem; flex-grow: 1"-->
+            <!--                >-->
+            <!--                    <img-->
+            <!--                        style="max-height: 20em; object-fit: cover"-->
+            <!--                        src="../assets/images/showcase/sss.png.webp"-->
+            <!--                        loading="lazy"-->
+            <!--                        alt="Zaslonski posnetek spletne strani"-->
+            <!--                    />-->
+            <!--                </div>-->
+            <!--            </a>-->
 
             <!--            <a-->
             <!--                href="https://github.com/MarelaTeam-s-Majske-Igre/MajskeIgre"-->
@@ -273,6 +320,10 @@ useServerSeoMeta(
 
         .div5 {
             grid-area: 4 / 1 / 5 / 3;
+
+            .title__wrapper {
+                width: 40%;
+            }
         }
 
         .div6 {

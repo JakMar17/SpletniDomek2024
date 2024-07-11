@@ -143,6 +143,7 @@ $box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.125);
         gap: 0.25em;
         padding: 0.25em;
         border-radius: 9999px;
+        background: white;
         -webkit-box-shadow: $box-shadow;
         -moz-box-shadow: $box-shadow;
         box-shadow: $box-shadow;

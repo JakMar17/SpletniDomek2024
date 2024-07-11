@@ -1,7 +1,12 @@
 ---
 title: Odlašanje kot neplačano delo
 subtitle: Intervencija v družbeni prostor z merjenjem porabljenega časa
-coverImage: /img/majcazakras-3.png
+attachments:
+    - attachmentTitle: Tehnična predstavitev projekta (PPT)
+      attachmentFile: /public/files/showcase/predstavitev_projekta_tehnicna_izvedba.pptx
+    - attachmentTitle: Predstavitev projekta (PDF)
+      attachmentFile: /public/files/showcase/predstavitev_seminar.pdf
+coverImage: /img/odlasanje-0.png
 highlights:
     - highlightTitle: Avtorji konceptualnega projekta
       highlightData:
@@ -54,6 +59,9 @@ descriptions:
           1. vpeljavo elementov v javni prostor, ki opozarjajo na problematiko
 
           2. **implementacijo mobilne aplikacije**, ki bi na podlagi uporabnikovih podatkov beležila *"koliko enot strojnega učenja je v času uporabe aplikacij proizvedel in kakšno materialno škodo si je s tem ustvaril, ko ni opravljal produktivnega dela"*
+
+
+          ![](/img/odlasanje-1.png)
     - superTitle: Mobilna aplikacija
       title: Cilj projekta
       content: >-
@@ -92,6 +100,9 @@ descriptions:
 
 
           V ospredje gradnikov je postavljena **informacija, ki uporabnika *zmoti***, z namenom odvračanja od nadaljnjega odlašanja. Ostale informacije uporabniku po večini ostajajo zakrite, s tem se lahko osredotoči na bistveno informacijo aplikacije, hkrati pa še vedno dostopa do podatkov o načinu generiranja podatkov in razlag.
+
+
+          ![](/img/odlasanje-2.png)
     - superTitle: Zaključek
       title: Širša uporabnost aplikacije
       content: >-
@@ -104,4 +115,10 @@ descriptions:
 
 
           Vendar pa pod drugi strani tudi samostojno zagotavlja dodano vrednost za posameznega uporabnika, saj mu nakaže lastne vzorce uporabe aplikacij na preprost in uporabniku prijazen način.
+
+
+          ![](/img/odlasanje-3.png)
+
+
+          ![](/img/odlasanje-4.png)
 ---
