@@ -79,6 +79,7 @@ const linkToShowCase = (path: string) =>
   background: white;
   transition: 0.5s;
   position: relative;
+  color: unset;
 
   animation: appear linear;
   animation-timeline: view();
@@ -97,7 +98,6 @@ const linkToShowCase = (path: string) =>
     height: 100%;
     background: rgba(#f0f0f0, 0.75);
     border-radius: $border-radius;
-    opacity: 0;
     transition: 0.5s;
     padding: 2rem;
     display: flex;
@@ -105,6 +105,10 @@ const linkToShowCase = (path: string) =>
     justify-content: center;
     align-items: center;
     text-align: center;
+
+    @media (pointer: fine) {
+      opacity: 0;
+    }
 
     &:hover {
       opacity: 1;
