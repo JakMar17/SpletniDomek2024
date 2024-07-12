@@ -1,5 +1,5 @@
 <template>
-    <div class="wrapper">
+    <div class="wrapper scroll-animation__from-bottom">
         <div class="icon__box">
             <i :class="icon" class="icon" />
         </div>

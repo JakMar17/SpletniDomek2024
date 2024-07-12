@@ -181,28 +181,28 @@ collections:
             widget: list
             required: false
             fields:
-              - label: Naslov povezave
-                name: linkTitle
-                widget: string
-                required: true
-              - label: URL povezave
-                name: linkUrl
-                widget: string
-                required: true
+                - label: Naslov povezave
+                  name: linkTitle
+                  widget: string
+                  required: true
+                - label: URL povezave
+                  name: linkUrl
+                  widget: string
+                  required: true
           - label: Priloge
             name: attachments
             widget: list
             required: false
             fields:
-              - label: Naslov priloge
-                name: attachmentTitle
-                widget: string
-                required: true
-              - label: Datoteka priloge
-                name: attachmentFile
-                widget: file
-                media_folder: /public/files/showcase
-                required: true
+                - label: Naslov priloge
+                  name: attachmentTitle
+                  widget: string
+                  required: true
+                - label: Datoteka priloge
+                  name: attachmentFile
+                  widget: file
+                  media_folder: /public/files/showcase
+                  required: true
           - label: Povzetek
             name: abstract
             widget: text

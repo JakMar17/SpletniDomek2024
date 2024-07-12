@@ -33,7 +33,6 @@ export default defineNuxtConfig({
     modules: [
         '@nuxt/content',
         'v-plausible',
-        'nuxt-aos',
         '@nuxt/eslint',
         [
             '@nuxtjs/google-fonts',

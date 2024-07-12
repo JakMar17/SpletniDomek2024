@@ -17,8 +17,7 @@
             </div>
 
             <div
-                class="is-flex is-justify-content-space-between is-flex-wrap-wrap"
-                data-aos="fade-in-up"
+                class="is-flex is-justify-content-space-between is-flex-wrap-wrap scroll-animation__from-bottom"
             >
                 <div class="intro__highlights">
                     <div
@@ -83,8 +82,7 @@
         <div
             v-for="paragraph of paragraphsParsed"
             :key="paragraph.title"
-            class="description"
-            data-aos="fade-in-up"
+            class="description scroll-animation__from-bottom"
         >
             <div class="description__supertitle">
                 {{ paragraph.superTitle }}

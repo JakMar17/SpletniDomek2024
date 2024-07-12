@@ -6,7 +6,11 @@
         </div>
 
         <div class="grid">
-            <NuxtLink id="aboutMe" to="/jaz" class="grid__tile">
+            <NuxtLink
+                id="aboutMe"
+                to="/jaz"
+                class="grid__tile scroll-animation__from-bottom"
+            >
                 <div class="img__wrapper">
                     <img
                         src="../assets/images/me-sm.jpg.webp"
@@ -29,7 +33,7 @@
 
             <NuxtLink
                 to="/showcase/majske-igre"
-                class="div2 grid__tile is-flex is-justify-content-space-between pl-6 pt-6 is-flex-wrap-wrap"
+                class="div2 grid__tile is-flex is-justify-content-space-between pl-6 pt-6 is-flex-wrap-wrap scroll-animation__from-bottom"
                 style="height: 20em; overflow: hidden"
             >
                 <div style="width: 40%">
@@ -52,7 +56,7 @@
 
             <NuxtLink
                 to="/showcase/marelabudget"
-                class="div3 grid__tile is-flex is-justify-content-space-between pl-6 pt-6 is-flex-wrap-wrap"
+                class="div3 grid__tile is-flex is-justify-content-space-between pl-6 pt-6 is-flex-wrap-wrap scroll-animation__from-bottom"
                 style="height: 20em; overflow: hidden"
             >
                 <div style="width: 80%">
@@ -76,7 +80,7 @@
 
             <NuxtLink
                 to="/showcase/jakobov-spletni-domek"
-                class="div4 grid__tile is-flex is-justify-content-space-between pl-6 pt-6 is-flex-wrap-wrap"
+                class="div4 grid__tile is-flex is-justify-content-space-between pl-6 pt-6 is-flex-wrap-wrap scroll-animation__from-bottom"
                 style="height: 20em; overflow: hidden; background: #ac1d18"
             >
                 <div style="width: 80%">
@@ -102,7 +106,7 @@
 
             <NuxtLink
                 to="/showcase/majca-za-kras"
-                class="div5 grid__tile is-flex is-justify-content-space-between pl-6 pt-6 is-flex-wrap-wrap"
+                class="div5 grid__tile is-flex is-justify-content-space-between pl-6 pt-6 is-flex-wrap-wrap scroll-animation__from-bottom"
                 style="height: 20em; overflow: hidden"
             >
                 <div class="title__wrapper">
@@ -127,7 +131,7 @@
 
             <NuxtLink
                 to="/showcase/odlasanje-kot-neplacano-delo"
-                class="div6 grid__tile is-flex is-justify-content-space-between is-flex-direction-column pl-6 pt-6"
+                class="div6 grid__tile is-flex is-justify-content-space-between is-flex-direction-column pl-6 pt-6 scroll-animation__from-bottom"
             >
                 <div>
                     <h3 class="title tile__title">Odlašanje</h3>

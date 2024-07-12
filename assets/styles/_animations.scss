@@ -1,0 +1,47 @@
+@keyframes scrollFromBottom {
+    from {
+        opacity: 0;
+        scale: 0.5;
+    }
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+.scroll-animation {
+    &__from-bottom {
+        animation: scrollFromBottom;
+        animation-timeline: view();
+        animation-range-start: entry 0%;
+        animation-range-end: cover 20%;
+    }
+
+    &__start {
+        &--10 {
+            animation-range-start: entry 10%;
+        }
+
+        &--15 {
+            animation-range-start: entry 15%;
+        }
+
+        &--20 {
+            animation-range-start: entry 20%;
+        }
+
+        &--30 {
+            animation-range-start: entry 30%;
+        }
+    }
+
+    &__end {
+        &--30 {
+            animation-range-end: cover 30%;
+        }
+
+        &--40 {
+            animation-range-end: cover 40%;
+        }
+    }
+}

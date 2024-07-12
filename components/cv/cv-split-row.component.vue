@@ -1,5 +1,7 @@
 <template>
-    <div class="cv__row">
+    <div
+        class="cv__row scroll-animation__from-bottom scroll-animation__start--15 scroll-animation__end--20"
+    >
         <h3
             class="cv__company-cell is-gray"
             style="

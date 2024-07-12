@@ -4,7 +4,7 @@
             <h1 class="header-h1">Moja zgodba</h1>
         </div>
 
-        <div class="about-me__wrapper" data-aos="fade-in-up">
+        <div class="about-me__wrapper scroll-animation__from-bottom">
             <div class="about-me__img-wrapper">
                 <img
                     class="about-me__img"
@@ -69,8 +69,11 @@
             </div>
         </div>
 
-        <div data-aos="fade-in-up">
-            <h2 class="header-h2" style="margin-top: 4rem; margin-bottom: 2rem">
+        <div>
+            <h2
+                class="header-h2 scroll-animation__from-bottom"
+                style="margin-top: 4rem; margin-bottom: 2rem"
+            >
                 Najpogosteje uporabljena orodja
             </h2>
             <div

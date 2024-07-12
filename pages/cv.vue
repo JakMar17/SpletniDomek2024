@@ -17,37 +17,31 @@
             </NuxtLink>
         </div>
 
-        <div data-aos="fade-in-up">
-            <h2 class="header-h2">Delovne izkušnje</h2>
-            <div v-if="workExperiences.length !== 0">
-                <CvSplitRowComponent
-                    v-for="w of workExperiences"
-                    :key="w.company"
-                    v-bind="w"
-                />
-            </div>
+        <h2 class="header-h2">Delovne izkušnje</h2>
+        <div v-if="workExperiences.length !== 0">
+            <CvSplitRowComponent
+                v-for="w of workExperiences"
+                :key="w.company"
+                v-bind="w"
+            />
         </div>
 
-        <div data-aos="fade-in-up">
-            <h2 class="header-h2">Izobrazba</h2>
-            <div>
-                <CvSplitRowComponent
-                    v-for="e of education"
-                    :key="e.position"
-                    v-bind="e"
-                />
-            </div>
+        <h2 class="header-h2">Izobrazba</h2>
+        <div>
+            <CvSplitRowComponent
+                v-for="e of education"
+                :key="e.position"
+                v-bind="e"
+            />
         </div>
 
-        <div data-aos="fade-in-up">
-            <h2 class="header-h2">Ostali poudarki</h2>
-            <div>
-                <CvSplitRowComponent
-                    v-for="o of otherHighlights"
-                    :key="o.position"
-                    v-bind="o"
-                />
-            </div>
+        <h2 class="header-h2">Ostali poudarki</h2>
+        <div>
+            <CvSplitRowComponent
+                v-for="o of otherHighlights"
+                :key="o.position"
+                v-bind="o"
+            />
         </div>
     </div>
 </template>

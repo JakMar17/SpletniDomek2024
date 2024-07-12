@@ -117,6 +117,7 @@ $link-focus-border: $primary;
 // Import Bulma and Buefy styles
 @import 'node_modules/bulma/bulma.sass';
 @import 'markdown';
+@import 'animations';
 
 .block_padding {
     padding: 3em 4em;
@@ -176,8 +177,12 @@ otherwise they are too wide for html body
     white-space: pre-wrap;
 }
 
+.container {
+    margin-bottom: 6rem;
+}
+
 @media screen and (max-width: 1024px) {
     .container {
-        margin: 0 2rem;
+        margin: 0 2rem 6rem;
     }
 }
