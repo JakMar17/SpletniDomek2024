@@ -17,10 +17,14 @@ collections:
             label: Življenjepis PDF
             file: content/cv/cv-file.json
             fields:
-                - label: Datoteka
-                  name: file
-                  widget: file
-                  media_folder: /public/files
+              - label: Datoteka SL
+                name: fileSl
+                widget: file
+                media_folder: /public/files
+              - label: Datoteka En
+                name: fileEn
+                widget: file
+                media_folder: /public/files
           - name: workExperiences
             label: Delovne izkušnje
             format: json
