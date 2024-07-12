@@ -101,7 +101,7 @@ const isMobileMenuVisible = ref(false)
 const mobileMenu = ref(null)
 
 const urls = [
-    // ['projekti', 'Projekti'],
+    ['/projekti', 'Projekti'],
     ['/cv', 'Izkušnje'],
     ['/jaz', 'O meni'],
 ]
