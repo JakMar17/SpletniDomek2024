@@ -46,11 +46,22 @@ const linkToShowCase = (path: string) =>
 
 <style lang="scss" scoped>
 
+@keyframes appear {
+  from {
+    opacity: 0;
+    scale: 0.5;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
 .grid {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  column-gap: 1rem;
-  row-gap: 1rem;
+  column-gap: 2em;
+  row-gap: 2em;
 
   @media screen and (min-width: 768px) {
     grid-template-columns: repeat(2, 1fr);
@@ -68,6 +79,10 @@ const linkToShowCase = (path: string) =>
   background: white;
   transition: 0.5s;
   position: relative;
+
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 20%;
 
   img {
     height: 100%;
