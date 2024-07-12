@@ -155,33 +155,6 @@ collections:
             name: subtitle
             widget: string
             required: true
-          - label: Povezave
-            name: links
-            widget: list
-            required: false
-            fields:
-                - label: Naslov povezave
-                  name: linkTitle
-                  widget: string
-                  required: true
-                - label: URL povezave
-                  name: linkUrl
-                  widget: string
-                  required: true
-          - label: Priloge
-            name: attachments
-            widget: list
-            required: false
-            fields:
-                - label: Naslov priloge
-                  name: attachmentTitle
-                  widget: string
-                  required: true
-                - label: Datoteka priloge
-                  name: attachmentFile
-                  widget: file
-                  media_folder: /public/files/showcase
-                  required: true
           - label: Naslovna slika
             name: coverImage
             widget: image
@@ -203,6 +176,37 @@ collections:
                       name: highlightDataItem
                       widget: string
                       required: true
+          - label: Povezave
+            name: links
+            widget: list
+            required: false
+            fields:
+              - label: Naslov povezave
+                name: linkTitle
+                widget: string
+                required: true
+              - label: URL povezave
+                name: linkUrl
+                widget: string
+                required: true
+          - label: Priloge
+            name: attachments
+            widget: list
+            required: false
+            fields:
+              - label: Naslov priloge
+                name: attachmentTitle
+                widget: string
+                required: true
+              - label: Datoteka priloge
+                name: attachmentFile
+                widget: file
+                media_folder: /public/files/showcase
+                required: true
+          - label: Povzetek
+            name: abstract
+            widget: text
+            required: true
           - label: Uvodnik
             name: highlightIntro
             widget: markdown
