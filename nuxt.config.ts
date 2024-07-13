@@ -53,6 +53,10 @@ export default defineNuxtConfig({
             apiHost: 'https://plausible.sven.marela.team/',
             trackLocalhost: false,
         },
+        settings: {
+            enableAutoOutboundTracking: true,
+            enableAutoPageviews: true,
+        },
         partytown: false,
     },
 })
