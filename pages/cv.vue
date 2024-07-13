@@ -8,6 +8,7 @@
        <NuxtLink
            v-if="cvFileUrl"
            :to="cvFileUrl"
+           @click="onCvDownloadTrackEvent('sl')"
            class="button is-dark is-rounded"
            target="_blank"
        >
@@ -19,6 +20,7 @@
        <NuxtLink
            v-if="cvFileEnUrl"
            :to="cvFileEnUrl"
+           @click="onCvDownloadTrackEvent('en')"
            class="button is-outlined is-rounded"
            target="_blank"
        >
@@ -62,6 +64,9 @@
 <script setup lang="ts">
 import type {CvCardModel} from '~/models'
 
+const { trackEvent } = usePlausible()
+const router = useRouter()
+
 const workExperiences = ref<CvCardModel[]>([])
 const education = ref<CvCardModel[]>([])
 const otherHighlights = ref<CvCardModel[]>([])
@@ -93,6 +98,9 @@ useServerSeoMeta(
       description: 'Nekaj o mojih dosedanjih izkušnjah in znanjih.',
     })
 )
+
+const onCvDownloadTrackEvent = (locale: string) =>
+  trackEvent('cvDownload', {props: {locale}});
 </script>
 
 <style lang="scss" scoped></style>

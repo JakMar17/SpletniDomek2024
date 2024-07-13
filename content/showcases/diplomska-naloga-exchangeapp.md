@@ -11,6 +11,11 @@ highlights:
       - MongoDB
       - MariaDB
       - Docker
+links:
+  - linkTitle: Diplomska naloga
+    linkUrl: https://repozitorij.uni-lj.si/Dokument.php?id=146645&lang=slv
+  - linkTitle: Izvorna koda
+    linkUrl: https://github.com/JakMar17/ExchangeApp
 abstract: Zaključna diplomska naloga Implementacija informacijskega sistema za
   medsebojno izmenjavo testnih primerov
 highlightIntro: >-
