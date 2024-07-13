@@ -31,7 +31,7 @@
                                 :key="link.linkTitle"
                                 class="link"
                             >
-                                <a :href="link.linkUrl" target="_blank">{{
+                                <a :href="link.linkUrl" target="_blank" @click="onExternalLinkClickTrackEvent('link', link.linkTitle)">{{
                                     link.linkTitle
                                 }}</a>
                             </div>
@@ -51,6 +51,7 @@
                                 <NuxtLink
                                     :href="attachment.attachmentFile"
                                     target="_blank"
+                                    @click="onExternalLinkClickTrackEvent('attachment', link.linkTitle)"
                                     >{{ attachment.attachmentTitle }}</NuxtLink
                                 >
                             </div>
@@ -104,6 +105,7 @@ import { parseMarkdown } from '~/utils/parseMarkdown'
 import type { ShowcaseDescriptionModel, ShowcaseModel } from '~/models'
 
 const route = useRoute()
+const {trackEvent} = usePlausible()
 
 const showcase = ref<ShowcaseModel | null>(null)
 const introParsed = ref<string | null>(null)
@@ -137,7 +139,7 @@ useAsyncData('fetchShowcase', () =>
 
     setTimeout(() => {
         Promise.all(
-            showcase.value?.descriptions.map(async (desc) => {
+            showcase.value?.descriptions?.map(async (desc) => {
                 try {
                     const parsed = await parseMarkdown(desc.content)
                     desc.content = parsed
@@ -149,6 +151,9 @@ useAsyncData('fetchShowcase', () =>
         ).then((res) => (paragraphsParsed.value = res))
     }, 100)
 })
+
+const onExternalLinkClickTrackEvent = (type: string, id: string) =>
+    trackEvent(`Showcase - ${showcase.value?.title} - ${type} - ${id}`)
 </script>
 
 <style lang="scss" scoped>

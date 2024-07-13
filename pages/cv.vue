@@ -65,7 +65,6 @@
 import type {CvCardModel} from '~/models'
 
 const { trackEvent } = usePlausible()
-const router = useRouter()
 
 const workExperiences = ref<CvCardModel[]>([])
 const education = ref<CvCardModel[]>([])
