@@ -100,7 +100,7 @@ useServerSeoMeta(
 )
 
 const onCvDownloadTrackEvent = (locale: string) =>
-  trackEvent('cvDownload', {props: {locale}});
+  trackEvent(`cvDownload~~${locale}`);
 </script>
 
 <style lang="scss" scoped></style>
