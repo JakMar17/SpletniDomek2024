@@ -15,7 +15,7 @@ const {trackEvent} = usePlausible()
 const links: Array<{ id: string, href: string, icon: string }> = [
   {
     id: 'github',
-    href: 'https://www.linkedin.com/in/jakmar17',
+    href: 'https://www.github.com/jakmar17',
     icon: 'ri-github-fill'
   },
   {
