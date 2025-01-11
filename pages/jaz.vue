@@ -51,7 +51,7 @@
                         >
                             EMAIL
                         </div>
-                        <div>jakob.marusic17@gmail.com</div>
+                        <div>jakob@marela.team</div>
                     </div>
                     <div>
                         <div
