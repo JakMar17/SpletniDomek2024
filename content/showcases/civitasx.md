@@ -31,7 +31,7 @@ highlightIntro: >-
 
   Platforma CivitasX je nastala v okviru magistrskega dela z naslovom "Rešitve pametnih mest v podeželski lokalni skupnosti".
 descriptions:
-  - superTitle: Rešitve pametnih mest v podeželski lokalni skupnsoti
+  - superTitle: Rešitve pametnih mest v podeželski lokalni skupnosti
     title: Teoritečen okvir
     content: >-
       Magistrsko delo obravnava razkorak med teoretičnim konceptom pametnih
@@ -52,8 +52,12 @@ descriptions:
       razvoja in povezovanju **lokalnih skupnosti**.
 
 
-
       Izhaja iz latinske besede *civitas* (kar pomeni skupnost) in je zasnovana tako, da prebivalcem določenega območja omogoči aktivnejšo vlogo pri razvoju njihovega okolja.
+
+
+
+
+      ![](/img/shot-14-.png)
   - content: >-
       Platforma ponuja več modulov, ki so namenjeni različnim potrebam lokalnih
       skupnosti:
@@ -66,6 +70,11 @@ descriptions:
       * **Takojšnje obveščanje**: Potisna sporočila uporabnikom glede pomembnih novic / nujnih situacij v skupnosti.
 
       * **Zbirke podatkov**: Prilagojene lokalne baze podatkov – npr. infrastruktura, okolje, vzgoja, zdravje, kultura, šport – za podporo projektom in načrtovanju.
+
+
+
+
+      ![](/img/shot-21-.png)
     title: Ključne funkcionalnosti
     superTitle: Kaj platforma omogoča
   - content: >-
@@ -78,6 +87,11 @@ descriptions:
       * Zbirke podatkov in modul za načrtovanje omogočajo bolj informirano odločanje in razvoj projektov, ki so usmerjeni v potrebe skupnosti.
 
       * Hitro obveščanje in dogodki izboljšujejo odzivnost skupnosti (npr. pri nujnih situacijah) in povezanost prebivalcev.
+
+
+
+
+      ![](/img/shot-10-.png)
     title: Koristi sistema
     superTitle: Kakšne koristi prinaša sistem?
   - content: >-
@@ -117,6 +131,11 @@ descriptions:
       * Lokalna društva, nevladne organizacije in ponudniki storitev: kot kanal za promocijo dogodkov/storitev
 
       * Turistična in infrastrukturna omrežja: izboljšanje vidnosti in dostopnosti javnih virov
+
+
+
+
+      ![](/img/shot-12-.png)
     superTitle: Občina Miren-Kostanjevica
     title: Pilotni projekt - CivitasMiren
 ---
