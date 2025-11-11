@@ -130,23 +130,22 @@
             </NuxtLink>
 
             <NuxtLink
-                to="/showcase/odlasanje-kot-neplacano-delo"
+                to="/showcase/civitasx"
                 class="div6 grid__tile is-flex is-justify-content-space-between is-flex-direction-column pl-6 pt-6 scroll-animation__from-bottom"
             >
                 <div>
-                    <h3 class="title tile__title">Odlašanje</h3>
+                    <h3 class="title tile__title">CivitasX</h3>
                     <div class="title tile__subtitle">
-                        kot neplačano delo - civilnodružbeni projekt za
-                        ozaveščanje
+                        platforma za gradnjo pametnih skupnosti
                     </div>
                 </div>
 
                 <div class="is-flex is-justify-content-flex-end mr-4 mb-4">
                     <img
                         style="max-height: 30em; object-fit: cover"
-                        src="../assets/images/showcase/showcase-odlasanje.png"
+                        src="../assets/images/showcase/showcase_civitas.png"
                         loading="lazy"
-                        alt="Odlašanje kot neplačano delo"
+                        alt="CivitasX"
                     />
                 </div>
             </NuxtLink>
