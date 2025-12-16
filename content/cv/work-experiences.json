@@ -1,9 +1,18 @@
 {
   "entries": [
     {
+      "entityName": "Besedan",
+      "position": "vodja razvoja",
+      "years": "2025 - danes",
+      "description": [
+        "Vodja razvoja platforme Besedan - orodja za analizo govora in razvoj osebne retorike. Delo vključuje celotno načrtovanje zalednih in čelnih sistemov, njihovo implementacijo in sistematično testiranje funkcionalnosti ter uporabniške izkušnje.\n\n",
+        "Delo vključuje razvoj in načrtovanje arhitekture čelnih in zalednih delov sistema, mobilne aplikacije razvite v ogrodju Flutter, čelne spletne aplikacije v ogrodju Angular in zalednega sistema razvitega v ogrodju Spring Boot in podatkovno bazo PostgreSQL. Celoten sistem je zasnovan modularno in deluje na osnovi kontejnerjev Docker."
+      ]
+    },
+    {
       "entityName": "Reduxi GmbH",
       "position": "vodja mobilnega razvoja",
-      "years": "2024 - danes",
+      "years": "2024 - 2026",
       "description": [
         "Vodja razvoja mobilne aplikacije Reduxi, sistema za nadzor in prilagoditev proizvodnje ter porabe električne energije v gospodinjstvu in poslovnih objektih.",
         "Delo vključuje analizo uporabniške izkušnje, načrtovanje novih funkcionalnosti ter njihov razvoj v sodelovanju z drugimi ekipami v podjetju. Komunikacija s poslovnimi partnerji, načrtovanje in razvoj OEM aplikacij ter njihova vključitev v partnerski ekosistem."
