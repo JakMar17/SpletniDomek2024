@@ -113,6 +113,9 @@ descriptions:
 
 
       Obvestila se na naprave pošiljajo preko platforme Firebase Cloud Messaging.
+
+
+      ![](/img/untitled-diagram.drawio.png)
   - superTitle: Statistika uporabe
     title: Uvedba sistema
     content: >-
