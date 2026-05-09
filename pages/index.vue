@@ -55,14 +55,16 @@
             </NuxtLink>
 
             <NuxtLink
-                to="/showcase/marelabudget"
+                to="/showcase/aplikacija-majske-igre-2026"
                 class="div3 grid__tile is-flex is-justify-content-space-between pl-6 pt-6 is-flex-wrap-wrap scroll-animation__from-bottom"
                 style="height: 20em; overflow: hidden"
             >
                 <div style="width: 80%">
-                    <h3 class="title tile__title">MarelaBudget</h3>
+                    <h3 class="title tile__title">
+                        Aplikacija Majske igre
+                    </h3>
                     <div class="title tile__subtitle">
-                        spletna aplikacija za nadzor osebnih financ
+                        uradna mobilna aplikacija za Android in iOS
                     </div>
                 </div>
                 <div
@@ -71,9 +73,9 @@
                 >
                     <img
                         style="max-height: 20em; object-fit: cover"
-                        src="../assets/images/showcase/budget-showcase.png"
+                        src="/img/shot.png"
                         loading="lazy"
-                        alt="Majca za Kras"
+                        alt="Zaslonski posnetek aplikacije Majske igre 2026"
                     />
                 </div>
             </NuxtLink>

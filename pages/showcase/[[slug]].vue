@@ -31,9 +31,17 @@
                                 :key="link.linkTitle"
                                 class="link"
                             >
-                                <a :href="link.linkUrl" target="_blank" @click="onExternalLinkClickTrackEvent('link', link.linkTitle)">{{
-                                    link.linkTitle
-                                }}</a>
+                                <a
+                                    :href="link.linkUrl"
+                                    target="_blank"
+                                    @click="
+                                        onExternalLinkClickTrackEvent(
+                                            'link',
+                                            link.linkTitle
+                                        )
+                                    "
+                                    >{{ link.linkTitle }}</a
+                                >
                             </div>
                         </div>
                     </div>
@@ -51,7 +59,12 @@
                                 <NuxtLink
                                     :href="attachment.attachmentFile"
                                     target="_blank"
-                                    @click="onExternalLinkClickTrackEvent('attachment', link.linkTitle)"
+                                    @click="
+                                        onExternalLinkClickTrackEvent(
+                                            'attachment',
+                                            link.linkTitle
+                                        )
+                                    "
                                     >{{ attachment.attachmentTitle }}</NuxtLink
                                 >
                             </div>
@@ -105,7 +118,7 @@ import { parseMarkdown } from '~/utils/parseMarkdown'
 import type { ShowcaseDescriptionModel, ShowcaseModel } from '~/models'
 
 const route = useRoute()
-const {trackEvent} = usePlausible()
+const { trackEvent } = usePlausible()
 
 const showcase = ref<ShowcaseModel | null>(null)
 const introParsed = ref<string | null>(null)
@@ -118,9 +131,10 @@ useAsyncData('fetchShowcase', () =>
     queryContent(`showcases/${route.params.slug}`).findOne()
 ).then(({ data }) => {
     showcase.value = data.value
-    parseMarkdown(showcase.value?.highlightIntro).then(
-        (parsed: string) => (introParsed.value = parsed)
-    )
+    parseMarkdown(showcase.value?.highlightIntro).then((parsed: string) => {
+        introParsed.value = parsed
+        nextTick(annotateMarkdownImages)
+    })
 
     attachments.value = data.value?.attachments?.map(
         ({ attachmentTitle, attachmentFile }) => ({
@@ -148,12 +162,50 @@ useAsyncData('fetchShowcase', () =>
                 }
                 return desc
             })
-        ).then((res) => (paragraphsParsed.value = res))
+        ).then((res) => {
+            paragraphsParsed.value = res
+            nextTick(annotateMarkdownImages)
+        })
     }, 100)
 })
 
 const onExternalLinkClickTrackEvent = (type: string, id: string) =>
     trackEvent(`Showcase - ${showcase.value?.title} - ${type} - ${id}`)
+
+const annotateMarkdownImages = () => {
+    if (import.meta.server) {
+        return
+    }
+
+    document
+        .querySelectorAll<HTMLParagraphElement>('.markdown > p')
+        .forEach((paragraph) => {
+            const children = Array.from(paragraph.children)
+
+            if (
+                children.length !== 1 ||
+                !(children[0] instanceof HTMLImageElement)
+            ) {
+                return
+            }
+
+            const image = children[0]
+            const updateImageClass = () => {
+                paragraph.classList.add('markdown__image-only')
+                paragraph.classList.toggle(
+                    'markdown__image-only--portrait',
+                    image.naturalHeight > image.naturalWidth
+                )
+            }
+
+            if (image.complete) {
+                updateImageClass()
+                return
+            }
+
+            image.addEventListener('load', updateImageClass, { once: true })
+        })
+}
 </script>
 
 <style lang="scss" scoped>

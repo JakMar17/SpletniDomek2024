@@ -1,8 +1,28 @@
 .markdown {
     & > p {
         margin-bottom: 1em;
+
+        &.markdown__image-only--portrait {
+            display: inline-flex;
+            width: min(100%, 20rem);
+            margin: 1rem 0.75rem 2rem;
+            justify-content: center;
+            vertical-align: top;
+        }
+
         & > img {
+            display: block;
+            width: auto;
+            max-width: 100%;
+            max-height: min(70vh, 42rem);
+            margin: 2rem auto;
             border-radius: 8px;
+            object-fit: contain;
+        }
+
+        &.markdown__image-only--portrait > img {
+            max-height: min(70vh, 34rem);
+            margin: 0 auto;
         }
     }
 
