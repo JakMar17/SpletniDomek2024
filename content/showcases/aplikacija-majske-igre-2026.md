@@ -99,6 +99,9 @@ descriptions:
 
 
       Tako aplikacija ni le pasivni prikaz programa, temveč živ komunikacijski kanal med organizatorji in udeleženci, ki omogoča, da se festival odvija bolj gladko in pregledno za vse.
+
+
+      ![](/img/portfolio-mockup-laptop.jpg)
     superTitle: Nadzorna plošča za organizatorje
   - superTitle: Tehnična implementacija
     title: Načrt in implementacija
