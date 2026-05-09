@@ -1,7 +1,7 @@
 ---
 title: Aplikacija Majske igre (2026)
 subtitle: Uradna mobilna aplikacija za Android in iOS
-coverImage: /img/kulturko.svg
+coverImage: /img/shot.png
 highlights:
   - highlightTitle: Orodja
     highlightData:
@@ -42,6 +42,9 @@ descriptions:
 
 
       Aplikacija je za uporabnike Androida in iOS zaživela aprila 2026 in že v prvem festivalskem letu zbrala okoli tisoč aktivnih uporabnikov, ki so program festivala prvič zares nosili v žepu.
+
+
+      ![](/img/majske1.webp)
     superTitle: Preambula
     title: Ozadje razvoja
   - content: >-
@@ -54,6 +57,15 @@ descriptions:
 
 
       Poseben del aplikacije je namenjen urniku info točke, kjer obiskovalci urejajo prijave in pridobivajo vse ključne informacije v živo ter dostop do kontaktov organizatorjev.
+
+
+      ![](/img/majske2.webp)
+
+
+      ![](/img/majske3.webp)
+
+
+      ![](/img/majske4.webp)
     title: Oris funcionalnosti
     superTitle: Uporabniški vmesnik in funkcionalnosti
   - title: Potisna obvestila
@@ -70,6 +82,9 @@ descriptions:
 
 
       Poleg tega aplikacija omogoča organizatorjem takojšnje sporočanje morebitnih sprememb, marketinških in drugih obvestil. Ta sporočila organizator pripravi preko implementiranega zalednega sistema, uporabnik pa je lahko obveščen nemudoma ali z zamikom.
+
+
+      ![](/img/majske5.webp)
   - title: Zaledni sistem za obveščanje
     content: >-
       Za organizatorje prireditve je bil razvit namenski zaledni sistem, s
