@@ -1,6 +1,14 @@
 {
   "entries": [
     {
+      "entityName": "Dihmahi",
+      "position": "razvijalec programske opreme",
+      "years": "2026 - danes",
+      "description": [
+        "Kot del razvojne ekipe sodelujem pri razvoju in vzdrževanju kompleksnih sistemov športne divizije podjetja Eventim. Odgovornosti vključujejo vzdrževanje, načrtovanje in implementacijo celostnih rešitev v ogrodjih Angular, VueJS in SingleSPA."
+      ]
+    },
+    {
       "entityName": "Besedan",
       "position": "vodja razvoja",
       "years": "2025 - danes",
